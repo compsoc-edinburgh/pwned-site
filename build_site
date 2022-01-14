@@ -1,0 +1,6 @@
+#!/bin/bash
+rm -rf _site
+cd airxhi.github.io
+bundle exec jekyll build
+mv _site ..
+cd ..
