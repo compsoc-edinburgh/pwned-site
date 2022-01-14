@@ -1,6 +1,6 @@
 #!/bin/bash
 rm -rf _site
-cd jekyll_proj
+cd jekyll
 bundle exec jekyll build
 mv _site ..
 cd ..
