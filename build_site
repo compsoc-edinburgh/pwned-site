@@ -1,6 +1,6 @@
 #!/bin/bash
 rm -rf _site
-cd airxhi.github.io
+cd jekyll_proj
 bundle exec jekyll build
 mv _site ..
 cd ..
