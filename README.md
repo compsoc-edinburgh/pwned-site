@@ -1,6 +1,6 @@
 ## editing the website
 
-Go into ./airxhi.github.io, change any files as needed. Recommend copying the folder to your machine and hosting a php server on the built static site as you go along.
+Go into `./jekyll_proj`, change any files as needed. Recommend copying the folder to your machine and hosting a php server on the built static site as you go along.
 
 ## building the website
 
