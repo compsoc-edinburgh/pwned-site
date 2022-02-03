@@ -1,6 +1,6 @@
 #about {
   font-size: 120%;
-  
+
   width: 90%;
   margin: 0 auto;
   max-width: 960px;
@@ -22,6 +22,26 @@
   b {
     color: #fff;
   }
+}
+
+.sponsor {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.sponsor img {
+  width: 300px;
+}
+
+.sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.sponsors div {
+  vertical-align: middle;
 }
 
 .submit {
