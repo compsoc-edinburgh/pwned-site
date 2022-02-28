@@ -77,10 +77,24 @@
 
 .user-details {
   text-align: center;
-  margin: 5px auto;
+  margin: 0 auto 5px;
   h1 {
     font-weight: 400;
   }
+}
+
+.prizes {
+  margin-top: -1em;
+  font-size: 22px;
+  color: white;
+}
+
+#first-place {
+  color: #ffb300;
+}
+
+#second-place, #third-place {
+  color: #fff;
 }
 
 .register-button {
