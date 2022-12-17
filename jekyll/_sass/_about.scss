@@ -110,3 +110,32 @@
 .register-button:hover {
   background-color: #000;
 }
+
+.sponsor_placeholder_platinum {
+  background: #202122;
+  border: 3px solid lightblue;
+  border-radius: 3px;
+  zoom: 2;
+}
+
+.sponsor_placeholder_gold {
+  background: #202122;
+  border: 3px solid gold;
+  border-radius: 3px;
+  zoom: 1.5;
+}
+
+.sponsor_placeholder_silver {
+  background: #202122;
+  border: 3px solid silver;
+  border-radius: 3px;
+  zoom: 1;
+}
+
+.sponsor_placeholder_bronze {
+  background: #202122;
+  border: 3px solid sienna;
+  border-radius: 3px;
+  zoom: 0.7;
+}
+

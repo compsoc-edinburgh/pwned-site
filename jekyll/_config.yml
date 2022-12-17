@@ -1,12 +1,12 @@
 # Site settings
-title: pwnEd 3
+title: PwnEd 4
 description: Edinburgh University CTF
 # baseurl: "" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
-username: pwnEd
-edition: 3
+username: PwnEd
+edition: 4
 user_description:
 email: contact@sigint.mx
 twitter_username: siginthq
