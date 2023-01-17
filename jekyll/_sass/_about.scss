@@ -111,31 +111,30 @@
   background-color: #000;
 }
 
-.sponsor_placeholder_platinum {
+.sponsor_placeholder {
   background: #202122;
-  border: 3px solid lightblue;
+  border-style: solid;
+  border-width: 3px;
   border-radius: 3px;
-  zoom: 2;
+}
+
+.sponsor_placeholder_platinum {
+  border-color: lightblue;
+  zoom: 1.50;
 }
 
 .sponsor_placeholder_gold {
-  background: #202122;
-  border: 3px solid gold;
-  border-radius: 3px;
-  zoom: 1.5;
+  border-color: gold;
+  zoom: 1.25;
 }
 
 .sponsor_placeholder_silver {
-  background: #202122;
-  border: 3px solid silver;
-  border-radius: 3px;
-  zoom: 1;
+  border-color: silver;
+  zoom: 1.00;
 }
 
 .sponsor_placeholder_bronze {
-  background: #202122;
-  border: 3px solid sienna;
-  border-radius: 3px;
-  zoom: 0.7;
+  border-color: sienna;
+  zoom: 0.75;
 }
 
