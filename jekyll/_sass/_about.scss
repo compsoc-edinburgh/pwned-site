@@ -138,3 +138,18 @@
   zoom: 0.75;
 }
 
+.talk_list {
+  font-size: 0.7em;
+  text-align: left;
+  border-collapse: separate;
+  border-spacing: 1em;
+}
+
+.talk_list th {
+  font-size: 1.5em;
+}
+
+.talk_list td:first-child {
+  color: #ffb300;
+  white-space: nowrap;
+}
