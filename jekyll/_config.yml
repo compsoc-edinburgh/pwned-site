@@ -21,3 +21,6 @@ exclude: ['package.json', 'src' , 'node_modules', 'vendor']
 
 sass:
   sass_dir: _sass
+
+plugins:
+  - jekyll-redirect-from
