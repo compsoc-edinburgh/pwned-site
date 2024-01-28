@@ -12,10 +12,10 @@ document.addEventListener("DOMContentLoaded", function() {
         scaleMobile: 1.00,
         color: 0xf6af04,
         size: 2.5,
-        spacing: 25.00,
+        spacing: 18,
         backgroundColor: 0x292a2d,
-        points: 20.00,
-        maxDistance: 32.00
+        points: 10.00,
+        maxDistance: 21.00
       })
 
 }, !1);
