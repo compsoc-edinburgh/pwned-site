@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     new SweetScroll({});
 
     VANTA.DOTS({
-        el: "#particles-js_2023",
+        el: "#particles-js",
         mouseControls: true,
         touchControls: true,
         gyroControls: false,
