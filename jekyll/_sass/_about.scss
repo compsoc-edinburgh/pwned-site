@@ -138,18 +138,39 @@
   zoom: 0.75;
 }
 
-.talk_list {
-  font-size: 0.7em;
+.speaker-container {
+  display: flex;
+  align-items: center;
   text-align: left;
-  border-collapse: separate;
-  border-spacing: 1em;
 }
 
-.talk_list th {
-  font-size: 1.5em;
+.placeholder-image {
+  width: 150px;
+  height: 150px;
+  opacity:0.25;
 }
 
-.talk_list td:first-child {
-  color: #ffb300;
-  white-space: nowrap;
+.speaker-image {
+  width: 150px;
+  width: 150px;
+}
+
+.talk-info {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.talk-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.speaker-name {
+  font-size: 18px;
+  font-style: italic;
+}
+
+.talk-description {
+  font-size: 16px;
+  text-align: justify;
 }

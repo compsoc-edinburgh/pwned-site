@@ -9,11 +9,13 @@
   </p>
 </div>
 
+<!--
 <div class="user-details" style="margin-top:60px; text-align:center;">
   <p style="padding: 10px; background: #ffb300; color: black; font-size: 1.5em;">
   Sign up <a target="_blank" style="color: black; text-decoration: underline;" href="https://forms.gle/7Xt4Ch4u7U5hv2dz5">here</a>! Registration closes on 31 January.
   </p>
 </div>
+-->
 
 <div class="user-details">
   <h1>Online Qualifiers</h1>
@@ -53,7 +55,7 @@
   <p>
   The event will consist of a <b>Capture The Flag (CTF) followed by a conference</b> which will determine the overall winners of pwnEd 5.
   </p>
-  <p style="margin-bottom: 0px;">
+  <p>
   Bringing together <b>industry experts and top students</b> from across the country, the finals will present a great opportunity for networking with top notch professionals and learning more about cybersecurity.
   </p>
   <p>
@@ -63,17 +65,16 @@
     <div class="tech">
       <h2>When?</h2>
       <p><b>
-        <a class="highlight">16th</a>
-        -
-        <a class="highlight">17th</a>
-        of
-        <a class="highlight">March</a>
-        2024.<br/>Times of day TBC.</b></p>
+        <a class="highlight">Starts</a>: 16/03/2024 </br>
+        <a class="highlight">Ends</a>: 16/03/2024 
+      </b></p>
     </div>
     <div class="tech">
       <h2>Where?</h2>
       <p><b>In-person on our<br/>
-        <a class="highlight">Edinburgh</a> campus!
+        <a class="highlight">Edinburgh</a>
+        campus
+        <a aria-label="Location" target="_blank" href="https://maps.app.goo.gl/Wzp4DnP1j72m3QFS8"> <i class="fa-solid fa-location-dot" aria-hidden="true"></i></a>
       </b></p>
     </div>
     <div class="tech">
@@ -87,59 +88,101 @@
   </div>
 </div>
 
-<!--
+
 <div class="user-details">
-  <h2><a id="talks">Talks</a></h2>
-  <table class="talk_list">
-    <tr>
-      <th>Speaker</th>
-      <th>Title</th>
-      <th>Abstract</th>
-    </tr>
-    <tr>
-      <td>Georgi G</td>
-      <td>When Harry Met Sammy...</td>
-      <td>Your phone is more than just a phone. It's an incredibly well developed OWASP Mobile Top 10 training platform. Georgi G from Interrupt Labs will discuss how Interrupt Labs pwned the Samsung Galaxy S22 phone at last year's Pwn2Own competition in Toronto.</td>
-    </tr>
-    <tr>
-      <td>Hyperreality</td>
-      <td>CTFs vs Real World Exploitation</td>
-      <td>CTFs are fun and a great way to improve your infosec knowledge. CTFs were how I first got into the field and led to an exciting job in application pentesting. But how does playing CTFs compare to the actual work of being a pentester and finding bugs in software? You might be surprised!</td>
-    </tr>
-    <tr>
-      <td>Marc Juarez</td>
-      <td>Website Fingerprinting Attacks in Practice</td>
-      <td>Website fingerprinting is a family of traffic analysis techniques that allow a network observer to learn information about the web pages visited over encrypted and anonymized channels. In this talk, I will give an overview of the state of the research on website fingerprinting, I will dive into the technical details of the implementation of some known website fingerprinting attacks, and discuss the deployment and practicality of such attacks in the real world.</td>
-    </tr>
-    <tr>
-      <td>Harvey S</td>
-      <td>Breaking Out of Parallels</td>
-      <td>This talk will dive into some of the attack surface of Parallels on Mac, including a guest-to-host VM escape and several privilege escalation vulnerabilities.</td>
-    </tr>
-    <tr>
-      <td>Esrever</td>
-      <td>CTF + Maths = SageMath</td>
-      <td>SageMath is to cryptography as pwntool is to pwn. SageMath is a free open source software application that contains a rich maths library. It provides an easy way to translate abstract mathematical concepts into numbers, code, and flags. In this talk, I will give examples of some frequently used maths in CTF, translate them to SageMath, and demonstrate some attacks that build on top of them.</td>
-    </tr>
-    <tr>
-      <td>Victor</td>
-      <td>Hacker's Guide to Apple Devices</td>
-      <td>Join us for a deep dive into macOS and iOS from a security perspective. We will cover fundamental differences from other platforms, the security model and restrictions, and all mainstream ways to work around these restrictions to manipulate apps and the system. The talk will cover app dumping and decryption, analysis and patching, signing and sideloading, jailbreaking, and all the tricky details along the way.</td>
-    </tr>
-    <tr>
-      <td>Leeky</td>
-      <td>An Overview of Software Obfuscation</td>
-      <td>In the recent years more and more commercial applications (especially in the mobile market) are applying obfuscation methods on their programs. Malware has been doing this for decades but as research and tooling in these areas advanced most simple techniques are no longer hindering analysis or are easy to remove. Instead more formal techniques are used and in this talk we will explore some of those, their weaknesses, methods of strengthening them and the trade offs involved.</td>
-    </tr>
-    <tr>
-      <td>Yuvraj Patel</td>
-      <td>Exploring Competitive Aspects of Synchronization in Shared Environments</td>
-      <td>In shared environments such as operating systems, multiple tenants with varied requirements compete to access the shared resources, making strong performance isolation necessary. Locks are widely used synchronization primitives that provide mutual exclusion in such environments. In this talk, we will emphasize the competitive aspects of synchronization in such shared environments. We will start by introducing the notion of lock usage — a new lock property that deals with the time spent in the critical section. Then, we will see how unfair lock usage in shared environments leads to a new problem of adversarial synchronization resulting in poor performance and denial-of-services. Next, using the inode cache in the Linux kernel, we introduce two new class of attacks – synchronization and framing attacks that exploit kernel synchronization to harm application performance. Lastly, we will discuss the design of Trātṛ — a Linux kernel extension that can detect and mitigate synchronization and framing attacks with low overhead, prevent attacks from worsening, and recover by repairing data structures to their pre-attack state. We will briefly examine the evaluation to understand how Trātṛ can handle such attacks efficiently and effectively.</td>
-    </tr>
-  </table>
+  <h1>Talks</h1>
+
+  <div class="speaker-container">
+    <img class="speaker-image" src="/assets/icons/zayne_zhang.jpeg" alt="Speaker's Image">
+    <div class="talk-info">
+      <div class="talk-title">Client-Side Attacks in a Post XSS World</div>
+      <div class="speaker-name">Zayne Zhang</div>
+    </div>
+  </div>
+  <div class="talk-description">
+    <p>
+      The web platform's openness and composability provide many benefits. Yet, the ability for websites to interact with each other has provided many opportunities for attacks that abuse the core principles of the web.
+      With the evolution of web frameworks and browsers, Cross-Site Scripting (XSS) and Cross- Site Request Forgery (CSRF) have become increasingly rare. In response, new classes of client-side vulnerabilities have emerged - DOM clobbering, XS-Leaks and client-side path traversals are just a few examples.
+      In this talk, we will explore the merits and potential pitfalls of various protections against XSS and CSRF, newer classes of client-side attacks and some real-world examples of their applications.
+    </p>
+  </div>
+  <br>
+
+  <div class="speaker-container">
+    <img class="placeholder-image" src="/assets/icons/pwnedtransparent.png" alt="Speaker's Image">
+    <div class="talk-info">
+      <div class="talk-title">Electromagnetic eavesdropping: extracting screen content from radio waves</div>
+      <div class="speaker-name">Dimitrije</div>
+    </div>
+  </div>
+  <div class="talk-description">
+    <p>
+      Voltage changes in electronic circuits cause them to emit electromagnetic waves. The weak signals emitted by monitors and associated cabling can be captured and processed to recover readable images from a distance. In this talk, I will give an overview of emissions security, the history of these attacks, and explain how and why electromagnetic eavesdropping on computer monitors works (hopefully in a way that doesn't require prior signal processing knowledge).
+    </p>
+  </div>
+  <br>
+
+  <div class="speaker-container">
+    <img class="placeholder-image" src="/assets/icons/pwnedtransparent.png" alt="Speaker's Image">
+    <div class="talk-info">
+      <div class="talk-title">Towards the secure future of web authentication with WebAutn…Or not?</div>
+      <div class="speaker-name">Axton Yao</div>
+    </div>
+  </div>
+  <div class="talk-description">
+    <p>
+      The new web standard, WebAuthn, known as Passkey, is replacing traditional passwords with asymmetric encryption to provide a secure and seamless web authentication experience. While this is the future of web authentication, it is not a silver bullet that solves all security issues. This talk will briefly introduce the technical details of WebAuthn and discuss methods of hacking WebAuthn by combining it with other attack techniques.
+    </p>
+  </div>
+  <br>
+
+  <div class="speaker-container">
+    <img class="speaker-image" src="/assets/icons/laurence_tennant.png" alt="Speaker's Image">
+    <div class="talk-info">
+      <div class="talk-title">"Bugs Are Shallow": Finding Vulnerabilities in Top GitHub Projects</div>
+      <div class="speaker-name">Laurence Tennant</div>
+    </div>
+  </div>
+  <div class="talk-description">
+    <p>
+      Linus's law posits that "given enough eyeballs, all bugs are shallow". I wanted to put this to the test and efficiently find security bugs in top GitHub projects. In this talk I run through various ways of running queries over a large corpus of open source repos. We'll look at the pros and cons of using the new GitHub CodeSearch, BigQuery, grep.app, CodeQL, or ripgrepping all the cloned code on your local machine. I show how this led to a finding in the #1 most starred GitHub repo, freeCodeCamp, giving me every coding certification in a single request. I conclude by investigating how open source maintainers can benefit from this work.
+    </p>
+  </div>
+  <br>
+
+  <div class="speaker-container">
+    <img class="placeholder-image" src="/assets/icons/pwnedtransparent.png" alt="Speaker's Image">
+    <div class="talk-info">
+      <div class="talk-title">Your Eyes are my Eyes</div>
+      <div class="speaker-name">Ben R</div>
+    </div>
+  </div>
+  <div class="talk-description">
+    <p>
+      IOT cameras are fun, IOT cameras with bugs are even more fun! This talk offers an introduction to vulnerability research, demonstrating the exploitation of multiple vulnerabilities leading to remote code execution on the Wyze Cam 3, a device from the Pwn2Own Toronto 2023 Surveillance Category.
+    </p>
+  </div>
+  <br>
+
+  <div class="speaker-container">
+    <img class="placeholder-image" src="/assets/icons/pwnedtransparent.png" alt="Speaker's Image">
+    <div class="talk-info">
+      <div class="talk-title">How to Not Blow Your Foot Off (Writing Modern C Safely)</div>
+      <div class="speaker-name">Sam Leonard</div>
+    </div>
+  </div>
+  <div class="talk-description">
+    <p>
+      C (rightly) has a reputation for being a hard language to program correctly.
+      However taking advantage of modern Linux and Compiler features we can make writing C significantly safer.
+      As well as eliminating whole classes of bugs in some cases, e.g. classic TOCTOU filesystem race conditions.
+      This talk will be a tour of these features with some advice from my experience writing C for the systemd project."
+    </p>
+  </div>
+  <br>
+
 </div>
-
-
+<!--
 <div class="user-details">
   <div class="prizes">
     <h2><a class="highlight">Prizes</a> (per team):</h2>
