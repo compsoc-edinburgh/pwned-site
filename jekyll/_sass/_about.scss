@@ -163,7 +163,7 @@
 }
 
 .talk-title {
-  font-size: 21px;
+  font-size: 22px;
   font-weight: bold;
 }
 
@@ -175,4 +175,13 @@
 .talk-description {
   font-size: 16px;
   text-align: justify;
+}
+
+@media only screen and (max-width: 600px) {
+  .talk-title {
+    font-size: 18px;
+  }
+  .talk-description {
+    font-size: 12px
+  }
 }
