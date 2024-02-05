@@ -76,7 +76,7 @@
 }
 
 .user-details {
-  text-align: left;
+  text-align: justify;
   margin: 0 auto 5px;
   h1, h2 {
     font-weight: 400;
@@ -145,14 +145,16 @@
 }
 
 .placeholder-image {
-  width: 150px;
-  height: 150px;
+  width:40%;
+  max-height:150px;
+  max-width: 150px;
   opacity:0.25;
 }
 
 .speaker-image {
-  width: 150px;
-  width: 150px;
+  width:40%;
+  max-height:150px;
+  max-width: 150px;
 }
 
 .talk-info {
@@ -161,7 +163,7 @@
 }
 
 .talk-title {
-  font-size: 22px;
+  font-size: 21px;
   font-weight: bold;
 }
 
