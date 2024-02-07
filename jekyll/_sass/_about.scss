@@ -24,15 +24,6 @@
   }
 }
 
-.sponsor {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.sponsor img {
-  width: 300px;
-}
-
 .sponsors {
   display: flex;
   flex-wrap: wrap;
@@ -163,16 +154,26 @@
 }
 
 .talk-title {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
+  @media screen and (max-width: $cut) {
+    font-size:20px;
+  }
 }
 
 .speaker-name {
-  font-size: 18px;
+  font-size: 20px;
   font-style: italic;
+  @media screen and (max-width: $cut) {
+    font-size:18px;
+  }
 }
 
 .talk-description {
-  font-size: 16px;
+  font-size: 18px;
   text-align: justify;
+  @media screen and (max-width: $cut) {
+    font-size:16px;
+  }
 }
+
