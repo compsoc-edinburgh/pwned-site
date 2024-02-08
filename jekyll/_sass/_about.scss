@@ -102,6 +102,13 @@
   background-color: #000;
 }
 
+.sponsor {
+  width: 450px;
+  @media screen and (max-width: $cut) {
+    width: 300px;
+  }
+}
+
 .sponsor_placeholder {
   background: #202122;
   border-style: solid;
