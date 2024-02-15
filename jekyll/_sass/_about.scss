@@ -169,12 +169,14 @@
 .speaker-name {
   font-size: 20px;
   font-style: italic;
+  cursor: pointer;
   @media screen and (max-width: $cut) {
     font-size:18px;
   }
 }
 
 .talk-description {
+  padding-top: 10px;
   font-size: 18px;
   text-align: justify;
   @media screen and (max-width: $cut) {
@@ -182,3 +184,37 @@
   }
 }
 
+.speaker-bio {
+  font-size: 16px;
+  @media screen and (max-width: $cut) {
+    font-size:14px;
+  }
+}
+
+.speaker-name .speaker-bio {
+  visibility: hidden;
+  max-width: 40vw;
+  width: 60vw;
+  border-radius: 6px;
+  padding: 10px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 1;
+}
+
+
+.speaker-name .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}

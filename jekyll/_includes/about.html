@@ -98,33 +98,47 @@
 <div class="user-details">
   <h1><a id="talks">Talks</a></h1>
 
-  <div class="speaker-container">
+  <div class="speaker-container" id="talk1">
     <img class="speaker-image" src="/assets/icons/zayne_zhang.jpeg" alt="Speaker's Image">
     <div class="talk-info">
       <div class="talk-title">Client-Side Attacks in a Post XSS World</div>
-      <div class="speaker-name">Zayne Zhang</div>
+      <div class="speaker-name" onclick="popUp1()">
+        Zayne Zhang
+        <span class="speaker-bio" id="speakerBio1" style="margin-left:-115px;"> 
+          Zayne is a Computer Science student at the University of Cambridge. He is an avid security researcher and CTF player. He holds industry certificates such as the OSWE and OSCP, and has previously worked in TikTok's security team. In his free time, he hunts for bugs on the HackerOne platform, and plays CTFs with Blue Water, one of the top global CTF teams. 
+        </span>
+      </div>
     </div>
   </div>
   <div class="talk-description">
-    <p>
-      The web platform's openness and composability provide many benefits. Yet, the ability for websites to interact with each other has provided many opportunities for attacks that abuse the core principles of the web.
-      With the evolution of web frameworks and browsers, Cross-Site Scripting (XSS) and Cross- Site Request Forgery (CSRF) have become increasingly rare. In response, new classes of client-side vulnerabilities have emerged - DOM clobbering, XS-Leaks and client-side path traversals are just a few examples.
+    <span class="talk-abstract">
+      The web platform's openness and composability provide many benefits. 
+      Yet, the ability for websites to interact with each other has provided many opportunities for attacks that abuse the core principles of the web.
+      With the evolution of web frameworks and browsers, Cross-Site Scripting (XSS) and Cross- Site Request Forgery (CSRF) have become increasingly rare. 
+      In response, new classes of client-side vulnerabilities have emerged - DOM clobbering, XS-Leaks and client-side path traversals are just a few examples.
       In this talk, we will explore the merits and potential pitfalls of various protections against XSS and CSRF, newer classes of client-side attacks and some real-world examples of their applications.
-    </p>
+    </span>      
   </div>
   <br>
 
-  <div class="speaker-container">
+  <div class="speaker-container" id="talk2">
     <img class="placeholder-image" src="/assets/icons/pwnedtransparent.png" alt="Speaker's Image">
     <div class="talk-info">
       <div class="talk-title">Electromagnetic eavesdropping: extracting screen content from radio waves</div>
-      <div class="speaker-name">Dimitrije</div>
+      <div class="speaker-name" onclick="popUp2()">
+        Dimitrije
+        <span class="speaker-bio" id="speakerBio2" style="margin-left:-75px;"> 
+          PhD student in the hardware security group at at the University of Cambridge, working on electromagnetic eavesdropping attacks targetting video interfaces. Long-time CTF player, originally with cr0wn (now organizers) and with cheriPi.
+        </span>   
+      </div>
     </div>
   </div>
   <div class="talk-description">
-    <p>
-      Voltage changes in electronic circuits cause them to emit electromagnetic waves. The weak signals emitted by monitors and associated cabling can be captured and processed to recover readable images from a distance. In this talk, I will give an overview of emissions security, the history of these attacks, and explain how and why electromagnetic eavesdropping on computer monitors works (hopefully in a way that doesn't require prior signal processing knowledge).
-    </p>
+    <span class="talk-abstract">
+      Voltage changes in electronic circuits cause them to emit electromagnetic waves. 
+      The weak signals emitted by monitors and associated cabling can be captured and processed to recover readable images from a distance. 
+      In this talk, I will give an overview of emissions security, the history of these attacks, and explain how and why electromagnetic eavesdropping on computer monitors works (hopefully in a way that doesn't require prior signal processing knowledge).
+    </span>
   </div>
   <br>
 
@@ -132,13 +146,19 @@
     <img class="placeholder-image" src="/assets/icons/pwnedtransparent.png" alt="Speaker's Image">
     <div class="talk-info">
       <div class="talk-title">Towards the secure future of web authentication with WebAutn…Or not?</div>
-      <div class="speaker-name">Axton Yao</div>
+      <div class="speaker-name" onclick="popUp3()">Axton Yao
+        <span class="speaker-bio" id="speakerBio3" style="margin-left:-90px;"> 
+          Computer science student at the University of Edinburgh, open-source web developer, WordPress developer, creator of WordPress WebAuthn plugin.
+        </span>
+      </div>
     </div>
   </div>
   <div class="talk-description">
-    <p>
-      The new web standard, WebAuthn, known as Passkey, is replacing traditional passwords with asymmetric encryption to provide a secure and seamless web authentication experience. While this is the future of web authentication, it is not a silver bullet that solves all security issues. This talk will briefly introduce the technical details of WebAuthn and discuss methods of hacking WebAuthn by combining it with other attack techniques.
-    </p>
+    <span class="talk-abstract">
+      The new web standard, WebAuthn, known as Passkey, is replacing traditional passwords with asymmetric encryption to provide a secure and seamless web authentication experience. 
+      While this is the future of web authentication, it is not a silver bullet that solves all security issues. 
+      This talk will briefly introduce the technical details of WebAuthn and discuss methods of hacking WebAuthn by combining it with other attack techniques.
+    </span>
   </div>
   <br>
 
@@ -146,13 +166,22 @@
     <img class="speaker-image" src="/assets/icons/laurence_tennant.png" alt="Speaker's Image">
     <div class="talk-info">
       <div class="talk-title">"Bugs Are Shallow": Finding Vulnerabilities in Top GitHub Projects</div>
-      <div class="speaker-name">Laurence Tennant</div>
+      <div class="speaker-name" onclick="popUp4()">Laurence Tennant
+        <span class="speaker-bio" id="speakerBio4" style="margin-left:-155px;">
+          Laurence is an application security consultant with a broad range of interests. He is the co-founder of CryptoHack, a popular cryptography challenge platform. He got addicted to CTFs at university and has been learning as much as he can about web, cryptography, network, and infrastructure security since then. In his spare time he loves going on cycling and hiking trips.
+        </span>
+      </div>
     </div>
   </div>
   <div class="talk-description">
-    <p>
-      Linus's law posits that "given enough eyeballs, all bugs are shallow". I wanted to put this to the test and efficiently find security bugs in top GitHub projects. In this talk I run through various ways of running queries over a large corpus of open source repos. We'll look at the pros and cons of using the new GitHub CodeSearch, BigQuery, grep.app, CodeQL, or ripgrepping all the cloned code on your local machine. I show how this led to a finding in the #1 most starred GitHub repo, freeCodeCamp, giving me every coding certification in a single request. I conclude by investigating how open source maintainers can benefit from this work.
-    </p>
+    <span class="talk-abstract">
+      Linus's law posits that "given enough eyeballs, all bugs are shallow". 
+      I wanted to put this to the test and efficiently find security bugs in top GitHub projects. 
+      In this talk I run through various ways of running queries over a large corpus of open source repos. 
+      We'll look at the pros and cons of using the new GitHub CodeSearch, BigQuery, grep.app, CodeQL, or ripgrepping all the cloned code on your local machine. 
+      I show how this led to a finding in the #1 most starred GitHub repo, freeCodeCamp, giving me every coding certification in a single request. 
+      I conclude by investigating how open source maintainers can benefit from this work.
+    </span>
   </div>
   <br>
 
@@ -160,13 +189,18 @@
     <img class="placeholder-image" src="/assets/icons/pwnedtransparent.png" alt="Speaker's Image">
     <div class="talk-info">
       <div class="talk-title">Your Eyes are my Eyes</div>
-      <div class="speaker-name">Ben R</div>
+      <div class="speaker-name" onclick="popUp5()">Ben R
+        <span class="speaker-bio" id="speakerBio5" style="margin-left:-50px;">
+          Ben is an Android vulnerability researcher at Interrupt Labs with experience in Linux, Android, and embedded platforms.
+        </span>
+      </div>
     </div>
   </div>
   <div class="talk-description">
-    <p>
-      IOT cameras are fun, IOT cameras with bugs are even more fun! This talk offers an introduction to vulnerability research, demonstrating the exploitation of multiple vulnerabilities leading to remote code execution on the Wyze Cam 3, a device from the Pwn2Own Toronto 2023 Surveillance Category.
-    </p>
+    <span class="talk-abstract">
+      IOT cameras are fun, IOT cameras with bugs are even more fun! 
+      This talk offers an introduction to vulnerability research, demonstrating the exploitation of multiple vulnerabilities leading to remote code execution on the Wyze Cam 3, a device from the Pwn2Own Toronto 2023 Surveillance Category.
+    </span>
   </div>
   <br>
 
@@ -174,16 +208,21 @@
     <img class="speaker-image" src="/assets/icons/sam_leonard.jpg" alt="Speaker's Image">
     <div class="talk-info">
       <div class="talk-title">How to Not Blow Your Foot Off (Writing Modern C Safely)</div>
-      <div class="speaker-name">Sam Leonard</div>
+      <div class="speaker-name" onclick="popUp6()">Sam Leonard
+        <span class="speaker-bio" id="speakerBio6" style="margin-left:-115px;">
+          Sam (he/they) is a recent graduate from the University of Manchester with a love for CTFs. 
+          Currently playing with 0rganizers. They work as a Software Engineer for Codethink, and are currently on a project to improve system's testing setup.
+        </span>
+      </div>
     </div>
   </div>
   <div class="talk-description">
-    <p>
+    <span class="talk-abstract">
       C (rightly) has a reputation for being a hard language to program correctly.
       However taking advantage of modern Linux and Compiler features we can make writing C significantly safer.
       As well as eliminating whole classes of bugs in some cases, e.g. classic TOCTOU filesystem race conditions.
       This talk will be a tour of these features with some advice from my experience writing C for the systemd project.
-    </p>
+    </span>  
   </div>
   <br>
 
