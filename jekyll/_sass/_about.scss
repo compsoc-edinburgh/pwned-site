@@ -196,7 +196,8 @@
   max-width: 40vw;
   width: 60vw;
   border-radius: 6px;
-  padding: 10px;
+  padding: 6px;
+  margin-top:30px;
   background-color: #fff;
   position: absolute;
   z-index: 1;
@@ -217,4 +218,28 @@
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity:1 ;}
+}
+
+#speakerBio1 {
+  margin-left: -115px;
+}
+
+#speakerBio2 {
+  margin-left: -80px;
+}
+
+#speakerBio3 {
+  margin-left: -90px;
+}
+
+#speakerBio4 {
+  margin-left: -155px;
+}
+
+#speakerBio5 {
+  margin-left: -55px;
+}
+
+#speakerBio6 {
+  margin-left: -115px;
 }
