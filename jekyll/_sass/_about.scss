@@ -185,14 +185,6 @@
   }
 }
 
-.speaker-bio {
-  font-size: 14px;
-  color:#363636;
-  @media screen and (max-width: $cut) {
-    font-size:12px;
-  }
-}
-
 .speaker-name .speaker-bio {
   visibility: hidden;
   max-width: 780px;
@@ -203,11 +195,13 @@
   background-color: #fff;
   position: absolute;
   z-index: 1;
+  font-size: 14px;
+  color:#363636;
   @media screen and (max-width: $cut) {
     margin-right: 5%;
+    font-size:12px;
   }
 }
-
 
 .speaker-name .show {
   visibility: visible;
