@@ -169,6 +169,7 @@
 .speaker-name {
   font-size: 20px;
   font-style: italic;
+  color:#fff;
   cursor: pointer;
   @media screen and (max-width: $cut) {
     font-size:18px;
@@ -186,6 +187,7 @@
 
 .speaker-bio {
   font-size: 14px;
+  color:#363636;
   @media screen and (max-width: $cut) {
     font-size:12px;
   }
@@ -193,14 +195,17 @@
 
 .speaker-name .speaker-bio {
   visibility: hidden;
-  max-width: 40vw;
-  width: 60vw;
+  max-width: 780px;
   border-radius: 6px;
   padding: 6px;
   margin-top:30px;
+  margin-right: 10%;
   background-color: #fff;
   position: absolute;
   z-index: 1;
+  @media screen and (max-width: $cut) {
+    margin-right: 5%;
+  }
 }
 
 
