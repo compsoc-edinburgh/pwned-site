@@ -95,7 +95,7 @@
 <div class="user-details">
   <h1><a id="talks">Talks</a></h1>
 
-  <div class="speaker-container" id="talk1">
+  <div class="speaker-container">
     <img class="speaker-image" src="/assets/icons/zayne_zhang.jpeg" alt="Speaker's Image">
     <div class="talk-info">
       <div class="talk-title">Client-Side Attacks in a Post XSS World</div>
@@ -118,7 +118,7 @@
   </div>
   <br>
 
-  <div class="speaker-container" id="talk2">
+  <div class="speaker-container">
     <img class="placeholder-image" src="/assets/icons/pwnedtransparent.png" alt="Speaker's Image">
     <div class="talk-info">
       <div class="talk-title">Electromagnetic eavesdropping: extracting screen content from radio waves</div>
@@ -224,6 +224,88 @@
       As well as eliminating whole classes of bugs in some cases, e.g. classic TOCTOU filesystem race conditions.
       This talk will be a tour of these features with some advice from my experience writing C for the systemd project.
     </span>  
+  </div>
+  <br>
+
+  <div class="speaker-container">
+    <img class="placeholder-image" src="/assets/icons/pwnedtransparent.png" alt="Speaker's Image">
+    <div class="talk-info">
+      <div class="talk-title">MTE as Tested</div>
+      <div class="speaker-name" onclick="popUp7()">
+        Mark Brand
+        <span class="speaker-bio" id="speakerBio7"> 
+          Mark Brand is a software engineer on Google's Project Zero team, which aims to reduce harm caused by targeted attacks on the Internet. His current focus is on web browser security.
+        </span>   
+      </div>
+    </div>
+  </div>
+  <div class="talk-description">
+    <span class="talk-abstract">
+      This talk will walk through the process of testing pre-production MTE hardware from a researcher's perspective. 
+      The technical results of this work have already been published (https://googleprojectzero.blogspot.com/2023/08/mte-as-implemented-part-1.html), so this talk will focus on the research process, the technical setbacks encountered during the testing, and the limits of how thoroughly we can test the behaviour of modern CPUs. 
+      We'll give a brief summary of the main results, and then finish with a deep-dive into some of the limitations of MTE when used for security purposes, and a discussion of the way that MTE both enabled discovery of, and impacted exploitability of, a Telegram zero-click vulnerability. (https://bugs.chromium.org/p/project-zero/issues/detail?id=2505).
+    </span>
+  </div>
+  <br>
+
+  <div class="speaker-container">
+    <img class="speaker-image" src="/assets/icons/george_rennie.png" alt="Speaker's Image">
+    <div class="talk-info">
+      <div class="talk-title">Provably Watertight Hardware: Detecting Side-Channel Leakage with Formal Methods</div>
+      <div class="speaker-name" onclick="popUp8()">
+        George Rennie
+        <span class="speaker-bio" id="speakerBio8"> 
+          George (he/him) is a master's electronic engineering student at the University of Southampton, focusing on the formal verification of secure hardware. Alongside his academic work, George has employed commercial formal verification tools at Arm to test the security of upcoming CPUs.
+        </span>   
+      </div>
+    </div>
+  </div>
+  <div class="talk-description">
+    <span class="talk-abstract">
+      How secure is your code? What about the hardware it runs on? 
+      Hardware side-channel attacks like Spectre and Meltdown let even seemingly secure software leak information to attackers. 
+      We will look at how these attacks manifest in hardware, approaches to specifying the security guarantees required by software and how we can use formal methods to prove that software and hardware uphold these contracts.
+    </span>
+  </div>
+  <br>
+
+  <div class="speaker-container">
+    <img class="placeholder-image" src="/assets/icons/pwnedtransparent.png" alt="Speaker's Image">
+    <div class="talk-info">
+      <div class="talk-title">Samsung + regex = heat - Discovering a new source of Digital Forensic evidence</div>
+      <div class="speaker-name" onclick="popUp9()">
+        Ian Ferguson
+        <span class="speaker-bio" id="speakerBio9"> 
+          Dr Ferguson gained his PhD in Software Engineering from the University of Sunderland in 1997. Having spent time in the SmartLab research group at the University of Strathclyde, since 2010 he has been a Senior Lecturer in Digital Forensics at Abertay University where he teaches onto the MSc and BSc Ethical Hacking and Cybersecurity degree suite. His research interests are centered upon improving and accelerating the Digital Forensic investigation process (with a particular emphasis on mobile and IoT devices) via Data Visulisation (and other) techniques.
+        </span>   
+      </div>
+    </div>
+  </div>
+  <div class="talk-description">
+    <span class="talk-abstract">
+      The talk describes how during a live Digital Forensic investigation the need arose to establish whether or not a particular game has been played on a mobile phone at a particular time. 
+      Current de-facto standard tools were unable to shed any light on this and the subsequent hunt for evidence lead to the identification of a hitherto unused source of logging information on Samsung phones and the development of the best 16 lines of Python the author has ever written.
+    </span>
+  </div>
+  <br>
+
+  <div class="speaker-container">
+    <img class="speaker-image" src="/assets/icons/marc_juarez.png" alt="Speaker's Image">
+    <div class="talk-info">
+      <div class="talk-title">Machine Learning for Traffic Analysis in Security & Privacy</div>
+      <div class="speaker-name"> <!-- onclick="popUp10()"-->
+        Marc Juarez
+        <span class="speaker-bio" id="speakerBio10"> 
+        </span>   
+      </div>
+    </div>
+  </div>
+  <div class="talk-description">
+    <span class="talk-abstract">
+      Traffic analysis techniques allow a network observer to learn private information about communications over encrypted and anonymized channels. 
+      This lecture will dive into a specific class of traffic analysis techniques to illustrate the challenges of applying machine learning for traffic analysis. 
+      The lecture will also cover the basic defensive strategies that most existing countermeasures follow to protect users from traffic analysis.
+    </span>
   </div>
   <br>
 
