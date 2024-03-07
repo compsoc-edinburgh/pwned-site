@@ -169,6 +169,12 @@
   font-size: 20px;
   font-style: italic;
   color:#fff;
+  &:hover{
+    color: $sec;
+  }
+  &:active {
+    color: $sec;
+  }
   cursor: pointer;
   @media screen and (max-width: $cut) {
     font-size:18px;
@@ -255,5 +261,5 @@
 }
 
 #speakerBio10 {
-  margin-left: -115px;
+  margin-left: -100px;
 }
