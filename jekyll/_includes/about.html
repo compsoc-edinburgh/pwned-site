@@ -96,30 +96,7 @@
   <h1><a id="talks">Talks</a></h1>
 
   <div class="speaker-container">
-    <img class="speaker-image" src="/assets/icons/zayne_zhang.jpeg" alt="Speaker's Image">
-    <div class="talk-info">
-      <div class="talk-title">Client-Side Attacks in a Post XSS World</div>
-      <div class="speaker-name" onclick="popUp1()">
-        Zayne Zhang
-        <span class="speaker-bio" id="speakerBio1"> 
-          Zayne is a Computer Science student at the University of Cambridge. He is an avid security researcher and CTF player. He holds industry certificates such as the OSWE and OSCP, and has previously worked in TikTok's security team. In his free time, he hunts for bugs on the HackerOne platform, and plays CTFs with Blue Water, one of the top global CTF teams. 
-        </span>
-      </div>
-    </div>
-  </div>
-  <div class="talk-description">
-    <span class="talk-abstract">
-      The web platform's openness and composability provide many benefits. 
-      Yet, the ability for websites to interact with each other has provided many opportunities for attacks that abuse the core principles of the web.
-      With the evolution of web frameworks and browsers, Cross-Site Scripting (XSS) and Cross- Site Request Forgery (CSRF) have become increasingly rare. 
-      In response, new classes of client-side vulnerabilities have emerged - DOM clobbering, XS-Leaks and client-side path traversals are just a few examples.
-      In this talk, we will explore the merits and potential pitfalls of various protections against XSS and CSRF, newer classes of client-side attacks and some real-world examples of their applications.
-    </span>      
-  </div>
-  <br>
-
-  <div class="speaker-container">
-    <img class="speaker-image" src="assets/icons/dimitrije.png" alt="Speaker's Image">
+    <img class="speaker-image" src="assets/speakers/dimitrije.png" alt="Speaker's Image">
     <div class="talk-info">
       <div class="talk-title">Electromagnetic eavesdropping: extracting screen content from radio waves</div>
       <div class="speaker-name" onclick="popUp2()">
@@ -140,28 +117,50 @@
   <br>
 
   <div class="speaker-container">
-    <img class="placeholder-image" src="/assets/icons/pwnedtransparent.png" alt="Speaker's Image">
+    <img class="speaker-image" src="/assets/speakers/george_rennie.png" alt="Speaker's Image">
     <div class="talk-info">
-      <div class="talk-title">Towards the secure future of web authentication with WebAutn…Or not?</div>
-      <div class="speaker-name" onclick="popUp3()">
-        Axton Yao
-        <span class="speaker-bio" id="speakerBio3"> 
-          Computer science student at the University of Edinburgh, open-source web developer, WordPress developer, creator of WordPress WebAuthn plugin.
-        </span>
+      <div class="talk-title">Provably Watertight Hardware: Detecting Side-Channel Leakage with Formal Methods</div>
+      <div class="speaker-name" onclick="popUp8()">
+        George Rennie
+        <span class="speaker-bio" id="speakerBio8"> 
+          George (he/him) is a master's electronic engineering student at the University of Southampton, focusing on the formal verification of secure hardware. Alongside his academic work, George has employed commercial formal verification tools at Arm to test the security of upcoming CPUs.
+        </span>   
       </div>
     </div>
   </div>
   <div class="talk-description">
     <span class="talk-abstract">
-      The new web standard, WebAuthn, known as Passkey, is replacing traditional passwords with asymmetric encryption to provide a secure and seamless web authentication experience. 
-      While this is the future of web authentication, it is not a silver bullet that solves all security issues. 
-      This talk will briefly introduce the technical details of WebAuthn and discuss methods of hacking WebAuthn by combining it with other attack techniques.
+      How secure is your code? What about the hardware it runs on? 
+      Hardware side-channel attacks like Spectre and Meltdown let even seemingly secure software leak information to attackers. 
+      We will look at how these attacks manifest in hardware, approaches to specifying the security guarantees required by software and how we can use formal methods to prove that software and hardware uphold these contracts.
     </span>
   </div>
   <br>
 
   <div class="speaker-container">
-    <img class="speaker-image" src="/assets/icons/laurence_tennant.png" alt="Speaker's Image">
+    <img class="speaker-image" src="/assets/speakers/ian_ferguson.jpg" alt="Speaker's Image">
+    <div class="talk-info">
+      <div class="talk-title">Samsung + regex = heat - Discovering a new source of Digital Forensic evidence</div>
+      <div class="speaker-name" onclick="popUp9()">
+        Ian Ferguson
+        <span class="speaker-bio" id="speakerBio9"> 
+          Dr Ferguson gained his PhD in Software Engineering from the University of Sunderland in 1997. 
+          Having spent time in the SmartLab research group at the University of Strathclyde, since 2010 he has been a Senior Lecturer in Digital Forensics at Abertay University where he teaches onto the MSc and BSc Ethical Hacking and Cybersecurity degree suite. 
+          His research interests are centered upon improving and accelerating the Digital Forensic investigation process (with a particular emphasis on mobile and IoT devices) via Data Visulisation (and other) techniques.
+        </span>   
+      </div>
+    </div>
+  </div>
+  <div class="talk-description">
+    <span class="talk-abstract">
+      The talk describes how during a live Digital Forensic investigation the need arose to establish whether or not a particular game has been played on a mobile phone at a particular time. 
+      Current de-facto standard tools were unable to shed any light on this and the subsequent hunt for evidence lead to the identification of a hitherto unused source of logging information on Samsung phones and the development of the best 16 lines of Python the author has ever written.
+    </span>
+  </div>
+  <br>
+
+  <div class="speaker-container">
+    <img class="speaker-image" src="/assets/speakers/laurence_tennant.png" alt="Speaker's Image">
     <div class="talk-info">
       <div class="talk-title">Bugs Are Shallow: Finding Vulnerabilities in Top GitHub Projects</div>
       <div class="speaker-name" onclick="popUp4()">
@@ -185,7 +184,28 @@
   <br>
 
   <div class="speaker-container">
-    <img class="speaker-image" src="/assets/icons/ben_r.jpeg" alt="Speaker's Image">
+    <img class="speaker-image" src="/assets/speakers/axton_yao.jpg" alt="Speaker's Image">
+    <div class="talk-info">
+      <div class="talk-title">Towards the secure future of web authentication with WebAutn…Or not?</div>
+      <div class="speaker-name" onclick="popUp3()">
+        Axton Yao
+        <span class="speaker-bio" id="speakerBio3"> 
+          Computer science student at the University of Edinburgh, open-source web developer, WordPress developer, creator of WordPress WebAuthn plugin.
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="talk-description">
+    <span class="talk-abstract">
+      The new web standard, WebAuthn, known as Passkey, is replacing traditional passwords with asymmetric encryption to provide a secure and seamless web authentication experience. 
+      While this is the future of web authentication, it is not a silver bullet that solves all security issues. 
+      This talk will briefly introduce the technical details of WebAuthn and discuss methods of hacking WebAuthn by combining it with other attack techniques.
+    </span>
+  </div>
+  <br>
+
+  <div class="speaker-container">
+    <img class="speaker-image" src="/assets/speakers/ben_r.jpeg" alt="Speaker's Image">
     <div class="talk-info">
       <div class="talk-title">Your Eyes are my Eyes</div>
       <div class="speaker-name" onclick="popUp5()">
@@ -205,7 +225,7 @@
   <br>
 
   <div class="speaker-container">
-    <img class="speaker-image" src="/assets/icons/sam_leonard.jpg" alt="Speaker's Image">
+    <img class="speaker-image" src="/assets/speakers/sam_leonard.jpg" alt="Speaker's Image">
     <div class="talk-info">
       <div class="talk-title">How to Not Blow Your Foot Off (Writing Modern C Safely)</div>
       <div class="speaker-name" onclick="popUp6()">
@@ -228,7 +248,7 @@
   <br>
 
   <div class="speaker-container">
-    <img class="speaker-image" src="/assets/icons/mark_brand.png" alt="Speaker's Image">
+    <img class="speaker-image" src="/assets/speakers/mark_brand.png" alt="Speaker's Image">
     <div class="talk-info">
       <div class="talk-title">MTE as Tested</div>
       <div class="speaker-name" onclick="popUp7()">
@@ -242,57 +262,37 @@
   <div class="talk-description">
     <span class="talk-abstract">
       This talk will walk through the process of testing pre-production MTE hardware from a researcher's perspective. 
-      The technical results of this work have already been published (https://googleprojectzero.blogspot.com/2023/08/mte-as-implemented-part-1.html), so this talk will focus on the research process, the technical setbacks encountered during the testing, and the limits of how thoroughly we can test the behaviour of modern CPUs. 
-      We'll give a brief summary of the main results, and then finish with a deep-dive into some of the limitations of MTE when used for security purposes, and a discussion of the way that MTE both enabled discovery of, and impacted exploitability of, a Telegram zero-click vulnerability. (https://bugs.chromium.org/p/project-zero/issues/detail?id=2505).
+      The technical results of this work have already been published <b><a href="https://googleprojectzero.blogspot.com/2023/08/mte-as-implemented-part-1.html">here</a></b>, so this talk will focus on the research process, the technical setbacks encountered during the testing, and the limits of how thoroughly we can test the behaviour of modern CPUs. 
+      We'll give a brief summary of the main results, and then finish with a deep-dive into some of the limitations of MTE when used for security purposes, and a discussion of the way that MTE both enabled discovery of, and impacted exploitability of, a Telegram zero-click vulnerability. (<b><a href="https://bugs.chromium.org/p/project-zero/issues/detail?id=2505">source</a></b>)
     </span>
   </div>
   <br>
 
   <div class="speaker-container">
-    <img class="speaker-image" src="/assets/icons/george_rennie.png" alt="Speaker's Image">
+    <img class="speaker-image" src="/assets/speakers/zayne_zhang.jpeg" alt="Speaker's Image">
     <div class="talk-info">
-      <div class="talk-title">Provably Watertight Hardware: Detecting Side-Channel Leakage with Formal Methods</div>
-      <div class="speaker-name" onclick="popUp8()">
-        George Rennie
-        <span class="speaker-bio" id="speakerBio8"> 
-          George (he/him) is a master's electronic engineering student at the University of Southampton, focusing on the formal verification of secure hardware. Alongside his academic work, George has employed commercial formal verification tools at Arm to test the security of upcoming CPUs.
-        </span>   
+      <div class="talk-title">Client-Side Attacks in a Post XSS World</div>
+      <div class="speaker-name" onclick="popUp1()">
+        Zayne Zhang
+        <span class="speaker-bio" id="speakerBio1"> 
+          Zayne is a Computer Science student at the University of Cambridge. He is an avid security researcher and CTF player. He holds industry certificates such as the OSWE and OSCP, and has previously worked in TikTok's security team. In his free time, he hunts for bugs on the HackerOne platform, and plays CTFs with Blue Water, one of the top global CTF teams. 
+        </span>
       </div>
     </div>
   </div>
   <div class="talk-description">
     <span class="talk-abstract">
-      How secure is your code? What about the hardware it runs on? 
-      Hardware side-channel attacks like Spectre and Meltdown let even seemingly secure software leak information to attackers. 
-      We will look at how these attacks manifest in hardware, approaches to specifying the security guarantees required by software and how we can use formal methods to prove that software and hardware uphold these contracts.
-    </span>
+      The web platform's openness and composability provide many benefits. 
+      Yet, the ability for websites to interact with each other has provided many opportunities for attacks that abuse the core principles of the web.
+      With the evolution of web frameworks and browsers, Cross-Site Scripting (XSS) and Cross- Site Request Forgery (CSRF) have become increasingly rare. 
+      In response, new classes of client-side vulnerabilities have emerged - DOM clobbering, XS-Leaks and client-side path traversals are just a few examples.
+      In this talk, we will explore the merits and potential pitfalls of various protections against XSS and CSRF, newer classes of client-side attacks and some real-world examples of their applications.
+    </span>      
   </div>
   <br>
 
   <div class="speaker-container">
-    <img class="speaker-image" src="/assets/icons/ian_ferguson.jpg" alt="Speaker's Image">
-    <div class="talk-info">
-      <div class="talk-title">Samsung + regex = heat - Discovering a new source of Digital Forensic evidence</div>
-      <div class="speaker-name" onclick="popUp9()">
-        Ian Ferguson
-        <span class="speaker-bio" id="speakerBio9"> 
-          Dr Ferguson gained his PhD in Software Engineering from the University of Sunderland in 1997. 
-          Having spent time in the SmartLab research group at the University of Strathclyde, since 2010 he has been a Senior Lecturer in Digital Forensics at Abertay University where he teaches onto the MSc and BSc Ethical Hacking and Cybersecurity degree suite. 
-          His research interests are centered upon improving and accelerating the Digital Forensic investigation process (with a particular emphasis on mobile and IoT devices) via Data Visulisation (and other) techniques.
-        </span>   
-      </div>
-    </div>
-  </div>
-  <div class="talk-description">
-    <span class="talk-abstract">
-      The talk describes how during a live Digital Forensic investigation the need arose to establish whether or not a particular game has been played on a mobile phone at a particular time. 
-      Current de-facto standard tools were unable to shed any light on this and the subsequent hunt for evidence lead to the identification of a hitherto unused source of logging information on Samsung phones and the development of the best 16 lines of Python the author has ever written.
-    </span>
-  </div>
-  <br>
-
-  <div class="speaker-container">
-    <img class="speaker-image" src="/assets/icons/marc_juarez.png" alt="Speaker's Image">
+    <img class="speaker-image" src="/assets/speakers/marc_juarez.png" alt="Speaker's Image">
     <div class="talk-info">
       <div class="talk-title">Machine Learning for Traffic Analysis in Security & Privacy</div>
       <div class="speaker-name" onclick="popUp10()">
@@ -332,7 +332,7 @@
 
 <br>
 
-<div class="user">
+<div class="user" style="margin-bottom: 50px;">
   <div class="tech">
     <div class="sponsors">
       <a href="https://bcryptic.com/" target="_blank">
@@ -341,6 +341,21 @@
       <a href="https://bcs.org/" target="_blank">
         <img src="/assets/sponsors/bcs.png" class="sponsor"/>
       </a>
+    </div>
+  </div>
+</div>
+
+<div class="user">
+  <div class="tech">
+    <div class="sponsors">
+      <a href="https://bcryptic.com/" target="_blank">
+        <img src="/assets/sponsors/uoe.png" class="sponsor" style="width: 200px;"/>
+      </a> 
+      <!--
+      <a href="https://bcs.org/" target="_blank">
+        <img src="/assets/sponsors/bcs.png" class="sponsor"/>
+      </a> 
+      -->
     </div>
   </div>
 </div>
