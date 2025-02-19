@@ -4,9 +4,11 @@
   width: 90%;
   margin: 0 auto;
   max-width: 960px;
+
   @media only screen and (min-width: $cut) {
     width: 80%;
   }
+
   svg {
     width: 60px !important;
     height: auto;
@@ -16,9 +18,12 @@
 .tech {
   margin: 10px;
   flex: 1 1 0;
-  h2, h3 {
+
+  h2,
+  h3 {
     font-weight: 400;
   }
+
   b {
     color: #fff;
   }
@@ -57,9 +62,11 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+
   p {
     font-size: 16px;
   }
+
   @media only screen and (min-width: $cut) {
     flex-wrap: nowrap;
     font-size: 75px;
@@ -69,7 +76,9 @@
 .user-details {
   text-align: justify;
   margin: 0 auto 5px;
-  h1, h2 {
+
+  h1,
+  h2 {
     font-weight: 400;
   }
 }
@@ -84,7 +93,8 @@
   color: #ffb300;
 }
 
-#second-place, #third-place {
+#second-place,
+#third-place {
   color: #fff;
 }
 
@@ -102,9 +112,19 @@
   background-color: #000;
 }
 
+.sponsor_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
 .sponsor {
-  max-width: 165px;
-  width: 35vw;
+  width: 100%;
+  zoom: 1.5;
+  flex: 0 1 auto;
 }
 
 .sponsor_placeholder {
@@ -141,14 +161,14 @@
 }
 
 .placeholder-image {
-  width:40%;
-  max-height:150px;
+  width: 40%;
+  max-height: 150px;
   max-width: 150px;
-  opacity:0.25;
+  opacity: 0.25;
 }
 
 .speaker-image {
-  width:40%;
+  width: 40%;
   max-width: 150px;
 }
 
@@ -160,24 +180,29 @@
 .talk-title {
   font-size: 22px;
   font-weight: bold;
+
   @media screen and (max-width: $cut) {
-    font-size:20px;
+    font-size: 20px;
   }
 }
 
 .speaker-name {
   font-size: 20px;
   font-style: italic;
-  color:#fff;
-  &:hover{
+  color: #fff;
+
+  &:hover {
     color: $sec;
   }
+
   &:active {
     color: $sec;
   }
+
   cursor: pointer;
+
   @media screen and (max-width: $cut) {
-    font-size:18px;
+    font-size: 18px;
   }
 }
 
@@ -185,8 +210,9 @@
   padding-top: 10px;
   font-size: 18px;
   text-align: justify;
+
   @media screen and (max-width: $cut) {
-    font-size:16px;
+    font-size: 16px;
   }
 }
 
@@ -195,16 +221,17 @@
   max-width: 780px;
   border-radius: 6px;
   padding: 6px;
-  margin-top:30px;
+  margin-top: 30px;
   margin-right: 10%;
   background-color: #fff;
   position: absolute;
   z-index: 1;
   font-size: 14px;
-  color:#363636;
+  color: #363636;
+
   @media screen and (max-width: $cut) {
     margin-right: 5%;
-    font-size:12px;
+    font-size: 12px;
   }
 }
 
@@ -215,51 +242,21 @@
 }
 
 @-webkit-keyframes fadeIn {
-  from {opacity: 0;} 
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
-}
+  from {
+    opacity: 0;
+  }
 
-#speakerBio1 {
-  margin-left: -115px;
-}
-
-#speakerBio2 {
-  margin-left: -75px;
-}
-
-#speakerBio3 {
-  margin-left: -90px;
-}
-
-#speakerBio4 {
-  margin-left: -155px;
-}
-
-#speakerBio5 {
-  margin-left: -50px;
-}
-
-#speakerBio6 {
-  margin-left: -115px;
-}
-
-#speakerBio7 {
-  margin-left: -100px;
-}
-
-#speakerBio8 {
-  margin-left: -125px;
-}
-
-#speakerBio9 {
-  margin-left: -110px;
-}
-
-#speakerBio10 {
-  margin-left: -100px;
+  to {
+    opacity: 1;
+  }
 }

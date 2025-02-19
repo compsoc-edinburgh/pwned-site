@@ -1,77 +1,35 @@
 <footer class="footer">
-    <!-- <p>&copy; {{ site.username }}</p> -->
-    <div style="text-align:center; align-items: center;">
-        <a href="{{ site.baseurl }}" style="padding:10px">
-            <img src="/assets/icons/pwnedtransparent.png" style="width:51px;height:51px;">
-        </a>
-        <a href="https://sigint.mx" style="padding:10px">
-            <img src="/assets/icons/sigint.gif" style="width:51px;height:51px;">
-        </a>
-        <a href="https://comp-soc.com" style="padding:10px">
-            <img src="/assets/icons/compsoc-profile.png" style="width:51px;height:51px;">
-        </a>
-    </div>
-    <p> Hosted by SIGINT Edinburgh.</p>
-    <div class="container">
-        <p><a href="{{site.baseurl}}/2023/index.html"> 2023</a> | <a href="{{ site.baseurl }}/coc/index.html"> Code of Conduct</a></p>
-    </div>
+  <!-- <p>&copy; {{ site.username }}</p> -->
+  <div style="text-align:center; align-items: center;">
+    <a href="{{ site.baseurl }}" style="padding:10px">
+      <img src="/assets/icons/pwnedtransparent.png" style="width:51px;height:51px;">
+    </a>
+    <a href="https://sigint.mx" style="padding:10px">
+      <img src="/assets/icons/sigint.gif" style="width:51px;height:51px;">
+    </a>
+    <a href="https://comp-soc.com" style="padding:10px">
+      <img src="/assets/icons/compsoc-profile.png" style="width:51px;height:51px;">
+    </a>
+  </div>
+  <p> Hosted by SIGINT Edinburgh.</p>
+  <div class="container">
+    <p><a href="/{{page.year | minus: 1}}/index.html"> {{ page.year | minus: 1 }} </a> | <a
+        href="{{ site.baseurl }}/coc/index.html"> Code of
+        Conduct</a></p>
+  </div>
 
 </footer>
 <script>
-    function popUp1() {
-      var popup = document.getElementById("speakerBio1");
-      popup.classList.toggle("show");
-    }
-
-    function popUp2() {
-      var popup = document.getElementById("speakerBio2");
-      popup.classList.toggle("show");
-    }
-
-    function popUp3() {
-      var popup = document.getElementById("speakerBio3");
-      popup.classList.toggle("show");
-    }
-
-    function popUp4() {
-      var popup = document.getElementById("speakerBio4");
-      popup.classList.toggle("show");
-    }
-
-    function popUp5() {
-      var popup = document.getElementById("speakerBio5");
-      popup.classList.toggle("show");
-    }
-
-    function popUp6() {
-      var popup = document.getElementById("speakerBio6");
-      popup.classList.toggle("show");
-    }
-
-    function popUp7() {
-      var popup = document.getElementById("speakerBio7");
-      popup.classList.toggle("show");
-    }
-
-    function popUp8() {
-      var popup = document.getElementById("speakerBio8");
-      popup.classList.toggle("show");
-    }
-
-    function popUp9() {
-      var popup = document.getElementById("speakerBio9");
-      popup.classList.toggle("show");
-    }
-
-    function popUp10() {
-      var popup = document.getElementById("speakerBio10");
-      popup.classList.toggle("show");
-    }
-  
+  function popUp(target) {
+    var popup = target.getElementsByClassName("speaker-bio")[0];
+    popup.classList.toggle("show");
+  }
 </script>
+
 <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
-<script src="{{ '/assets/js/sweet-scroll.min.js' | prepend: site.baseurl }}"></script>
-<script src="{{ '/assets/js/main.js' | prepend: site.baseurl }}"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+<script src="{{ page.animation_src }}"></script>
+<script src="/assets/js/sweet-scroll.min.js"></script>
+<script src="/assets/js/main_{{ page.year }}.js"></script>
 {% include google-analytics.html %}
