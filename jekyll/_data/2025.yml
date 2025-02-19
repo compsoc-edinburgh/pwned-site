@@ -1,34 +1,15 @@
+prizes:
+  # first: 1000
+  # second: 500
+  # third: 300
+
 sponsors:
   platinum:
-    - name: Trenchant
-      url: https://trenchant.io
-      logo: /assets/sponsors/trenchant.png
-    - name: Trenchant
-      url: https://trenchant.io
-      logo: /assets/sponsors/trenchant.png
-    - name: Trenchant
-      url: https://trenchant.io
-      logo: /assets/sponsors/trenchant.png
-    - name: Trenchant
-      url: https://trenchant.io
-      logo: /assets/sponsors/trenchant.png
+    # - name: Trenchant
+    #   url: https://trenchant.io
+    #   logo: /assets/sponsors/trenchant.png
 
   gold:
-    - name: Crowdstrike
-      url: https://crowdstrike.com
-      logo: /assets/sponsors/crowdstrike.png
-    - name: crowdstrike
-      url: https://crowdstrike.com
-      logo: /assets/sponsors/crowdstrike.png
-    - name: crowdstrike
-      url: https://crowdstrike.com
-      logo: /assets/sponsors/crowdstrike.png
-    - name: crowdstrike
-      url: https://crowdstrike.com
-      logo: /assets/sponsors/crowdstrike.png
-    - name: crowdstrike
-      url: https://crowdstrike.com
-      logo: /assets/sponsors/crowdstrike.png
   silver:
   bronze:
   infra:
@@ -38,20 +19,14 @@ sponsors:
 
 talks:
   # Img can be automatically derived based off of the speaker name. If the speaker.name is not specified, will default to /assets/speakers/{{ talk.speaker.name | downcase | replace: ' ', '_' }}.png
-  - title: "Electromagnetic eavesdropping: extracting screen content from radio waves"
-    abstract:
-      Voltage changes in electronic circuits cause them to emit electromagnetic waves.
-      The weak signals emitted by monitors and associated cabling can be captured and processed to recover readable
-      images from a distance.
-      In this talk, I will give an overview of emissions security, the history of these attacks, and explain how and why
-      electromagnetic eavesdropping on computer monitors works (hopefully in a way that doesn't require prior signal
-      processing knowledge).
-    speaker:
-      name: "Dimitrije"
-      bio: PhD student in the hardware security group at at the University of Cambridge, working on electromagnetic eavesdropping attacks targetting video interfaces. Long-time CTF player, originally with cr0wn (now organizers) and with cheriPi.
-
-  - title: "Provably Watertight Hardware: Detecting Side-Channel Leakage with Formal Methods"
-    abstract: How secure is your code? What about the hardware it runs on?  Hardware side-channel attacks like Spectre and Meltdown let even seemingly secure software leak information to attackers.  We will look at how these attacks manifest in hardware, approaches to specifying the security guarantees required by software and how we can use formal methods to prove that software and hardware uphold these contracts.
-    speaker:
-      name: George Rennie
-      bio: George (he/him) is a master's electronic engineering student at the University of Southampton, focusing on the formal verification of secure hardware. Alongside his academic work, George has employed commercial formal verification tools at Arm to test the security of upcoming CPUs.
+  # - title: "Electromagnetic eavesdropping: extracting screen content from radio waves"
+  #   abstract:
+  #     Voltage changes in electronic circuits cause them to emit electromagnetic waves.
+  #     The weak signals emitted by monitors and associated cabling can be captured and processed to recover readable
+  #     images from a distance.
+  #     In this talk, I will give an overview of emissions security, the history of these attacks, and explain how and why
+  #     electromagnetic eavesdropping on computer monitors works (hopefully in a way that doesn't require prior signal
+  #     processing knowledge).
+  #   speaker:
+  #     name: "Dimitrije"
+  #     bio: PhD student in the hardware security group at at the University of Cambridge, working on electromagnetic eavesdropping attacks targetting video interfaces. Long-time CTF player, originally with cr0wn (now organizers) and with cheriPi.
