@@ -27,6 +27,58 @@
 {% endif %}
 
 <div class="user-details">
+  <h1>In-Person Finals and Conference</h1>
+  <p>
+    The event will consist of a <b>Capture The Flag (CTF) followed by a conference</b> which will determine the overall
+    winners of pwnEd {{ page.edition }}.
+  </p>
+  <p>
+    Bringing together <b>industry experts and top students</b> from across the country, the finals present a great
+    opportunity for networking with top notch professionals and diving deeper into cybersecurity.
+  </p>
+  <p>
+    Our <b>call for speakers</b> is now open! Please fill out the form <a
+      href="https://forms.gle/Bz5XVTyRRoNpRK6L7">here</a> if you would like to present a ~50min talk. We are primarily
+    looking for technical presentations, but are open to all topics.
+  </p>
+  <div class="user">
+    <div class="tech">
+      <h2>When?</h2>
+      <p><b>
+          <a class="highlight">CTF Finals</a></br>
+          <a class="highlight">Date</a>: {{ page.finals_start | date: '%Y-%m-%d' }} </br>
+          <a class="highlight">Time</a>: {{ page.finals_start | date: '%T' }}
+        </b></p>
+      <p><b>
+          <a class="highlight">Conference</a></br>
+          <a class="highlight">Date</a>: {{ page.conf_start | date: '%Y-%m-%d' }} </br>
+          <a class="highlight">Time</a>: {{ page.conf_start | date: '%T' }}
+        </b></p>
+    </div>
+    <div class="tech">
+      <h2>Where?</h2>
+        <a aria-label="Location" href="https://maps.app.goo.gl/fYTcfvRJZPKRK3yFA">
+      <p>
+          <b>In-person on our <br>
+          <span class="highlight">Edinburgh</span>
+          campus at the Nucleus building.
+          <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+        </b>
+        </p>
+        </a>
+    </div>
+    <div class="tech">
+      <h2>Who?</h2>
+      <p>
+        The conference is <b><a class="highlight">open to all</a>.</b><br>
+        Only qualifying teams will be able to attend the CTF finals.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<div class="user-details">
   <h1><a id="quals">Online Qualifiers</a></h1>
   <p style="margin-bottom: 0px">
     The qualifiers will be an online <b>jeopardy-style CTF</b> with a large variety of challenges covering everything
@@ -61,55 +113,8 @@
   </div>
 </div>
 
-<div class="user-details">
-  <h1>In-Person Finals and Conference</h1>
-  <p>
-    The event will consist of a <b>Capture The Flag (CTF) followed by a conference</b> which will determine the overall
-    winners of pwnEd {{ page.edition }}.
-  </p>
-  <p>
-    Bringing together <b>industry experts and top students</b> from across the country, the finals present a great
-    opportunity for networking with top notch professionals and diving deeper into cybersecurity.
-  </p>
-  <p>
-    Our <b>call for speakers</b> is now open! Please fill out the form <a
-      href="https://forms.gle/Bz5XVTyRRoNpRK6L7">here</a> if you would like to present a ~50min talk. We are primarily
-    looking for technical presentations, but are open to all topics.
-  </p>
-  <div class="user">
-    <div class="tech">
-      <h2>When?</h2>
-      <p><b>
-          <a class="highlight">CTF Finals</a></br>
-          <a class="highlight">Date</a>: {{ page.finals_start | date: '%Y-%m-%d' }} </br>
-          <a class="highlight">Time</a>: {{ page.finals_start | date: '%T' }}
-        </b></p>
-      <p><b>
-          <a class="highlight">Conference</a></br>
-          <a class="highlight">Date</a>: {{ page.conf_start | date: '%Y-%m-%d' }} </br>
-          <a class="highlight">Time</a>: {{ page.conf_start | date: '%T' }}
-        </b></p>
-    </div>
-    <div class="tech">
-      <h2>Where?</h2>
-      <p><b>In-person on our<br />
-          <a class="highlight">Edinburgh</a>
-          campus
-          <a aria-label="Location" target="_blank" href="https://maps.app.goo.gl/fYTcfvRJZPKRK3yFA"> <i
-              class="fa-solid fa-location-dot" aria-hidden="true"></i></a>
-        </b></p>
-    </div>
-    <div class="tech">
-      <h2>Who?</h2>
-      <p>
-        <b><a class="highlight">Qualifying teams only</a>.</b><br>
-        Conference tickets available separately.
-      </p>
-    </div>
-  </div>
-</div>
 
-
+{% if data.talks %}
 <div class="user-details">
   <h1><a id="talks">Talks</a></h1>
 
@@ -141,44 +146,43 @@
     </div>
     <br>
   {% endfor %}
+{% endif %}
 
-<!--
+
+
+{% if data.prizes %}
 <div class="user-details">
   <div class="prizes">
     <h2><a class="highlight">Prizes</a> (per team):</h2>
-    <div id="first-place"> 🏆 £1000 </div>
-    <div id="second-place"> 🥈 £500 </div>
-    <div id="third-place"> 🥉 £250 </div>
+    <div id="first-place"> 🏆 £{{ data.prizes.first }} </div>
+    <div id="second-place"> 🥈 £{{ data.prizes.second }} </div>
+    <div id="third-place"> 🥉 £{{ data.prizes.third }} </div>
   </div>
 </div>
+{% endif %}
 
--->
+
+
 <div class="user-details">
   <h2>Many thanks to our <a class="highlight">event sponsors</a>:</h2>
 </div>
 
-<br>
 
 {% for sponsor_tier in data.sponsors %}
-
   {% comment %} 
   Skip infra sponsors as they're displayed separately at the bottom
   sponsor_tier[0] contains the sponsor tier name
     sponsor_tier[1] contains the list of sponsors. If it's nil, that means there are no sponsors in that tier
   {% endcomment %}
-
   {% if sponsor_tier[1] == nil %}
     {% continue %}
   {% endif %}
-
   {% if sponsor_tier[0] == "infra" %} 
     {% continue %}
   {% endif %}
-
-
-  <h2> {{ sponsor_tier[0] | capitalize }} </h2>
   <div class="user" style="margin-bottom: 50px;">
     <div class="tech">
+      <h2> {{ sponsor_tier[0] | capitalize }} </h2>
       {% comment %} This is to dynamically resize the sponsors {% endcomment %}
       {% assign row_size = 3 %}
       {% assign rows = sponsor_tier[1].size | divided_by: row_size | ceil %} 
