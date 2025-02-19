@@ -6,6 +6,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+
   .particles-js-canvas-el {
     height: 100vh !important;
   }
@@ -15,7 +16,7 @@
   font-family: 'Montserrat', sans-serif;
   z-index: 1;
   text-align: center;
-  color:#FFF;
+  color: #FFF;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -23,16 +24,19 @@
   margin: 0 auto;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+
   .site-title {
     font-size: 52px;
     display: inline-block;
     line-height: 1;
     color: #FFF;
-    @media only screen and (min-width:$cut){
+
+    @media only screen and (min-width:$cut) {
       margin: 0;
       font-size: 75px;
     }
   }
+
   .site-description {
     font-size: 16px;
     display: block;
@@ -40,13 +44,16 @@
     color: #a9a9b3;
     margin-top: 16px;
     margin-bottom: 16px;
-    @media only screen and (min-width:$cut){
+
+    @media only screen and (min-width:$cut) {
       font-size: 20px;
     }
   }
+
   .number {
     color: #ffb300;
     font-size: 68px;
+
     @media only screen and (min-width:$cut) {
       font-size: 92px;
     }
@@ -58,6 +65,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+
   a {
     // no borders
     outline: 0 !important;
@@ -68,6 +76,7 @@
     padding: 0px;
     margin: 0;
   }
+
   .icon {
     display: flex;
     justify-content: center;
@@ -83,7 +92,8 @@
     border: none;
     transition: all .5s;
 
-    &:hover, &:active {
+    &:hover,
+    &:active {
       color: $main;
       background: #FFF;
     }
@@ -114,24 +124,27 @@
   border: none !important;
   outline-style: none !important;
   -moz-outline-style: none !important;
+
   .icon {
-      position: absolute;
-      -webkit-transform-style: preserve-3d;
-      transform-style: preserve-3d;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      width: 100px;
-      height: 100px;
-      fill: #fff;
-      -webkit-animation: pulse 1.3s infinite;
-      animation: pulse 1.3s infinite;
-      &:hover {
-        color: $sec;
-      }
-      &:active {
-        color: $sec;
-      }
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    fill: #fff;
+    -webkit-animation: pulse 1.3s infinite;
+    animation: pulse 1.3s infinite;
+
+    &:hover {
+      color: $sec;
+    }
+
+    &:active {
+      color: $sec;
+    }
   }
 }

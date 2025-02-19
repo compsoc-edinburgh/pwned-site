@@ -1,7 +1,7 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     new SweetScroll({});
 
-    VANTA.NET({
+    VANTA.TRUNK({
         el: "#particles-js",
         mouseControls: true,
         touchControls: true,
@@ -10,12 +10,9 @@ document.addEventListener("DOMContentLoaded", function() {
         minWidth: 200.00,
         scale: 1.00,
         scaleMobile: 1.00,
-        color: 0xf6af04,
-        size: 2.5,
-        spacing:15,
+        spacing: 3.00,
+        chaos: 5,
         backgroundColor: 0x292a2d,
-        points: 10.00,
-        maxDistance: 15.00
-      })
-
+        color: 0x996D02,
+    });
 }, !1);
