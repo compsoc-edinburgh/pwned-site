@@ -272,6 +272,16 @@
   }
 }
 
+#overflow {
+  font-family: monospace;
+  text-align: left;
+}
+
+#segfault {
+  visibility: hidden;
+  color: #a81313;
+}
+
 .speaker-name .show {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
