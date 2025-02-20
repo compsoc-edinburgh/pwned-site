@@ -1,8 +1,6 @@
 # Site settings
 title: pwnEd 6
 description: Edinburgh University CTF & Conference
-# baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://pwned.sigint.mx" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: pwnEd
