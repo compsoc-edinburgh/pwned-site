@@ -4,9 +4,11 @@
   width: 90%;
   margin: 0 auto;
   max-width: 960px;
+
   @media only screen and (min-width: $cut) {
     width: 80%;
   }
+
   svg {
     width: 60px !important;
     height: auto;
@@ -16,9 +18,12 @@
 .tech {
   margin: 10px;
   flex: 1 1 0;
-  h2, h3 {
+
+  h2,
+  h3 {
     font-weight: 400;
   }
+
   b {
     color: #fff;
   }
@@ -66,9 +71,11 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+
   p {
     font-size: 16px;
   }
+
   @media only screen and (min-width: $cut) {
     flex-wrap: nowrap;
     font-size: 75px;
@@ -78,7 +85,9 @@
 .user-details {
   text-align: center;
   margin: 0 auto 5px;
-  h1, h2 {
+
+  h1,
+  h2 {
     font-weight: 400;
   }
 }
@@ -93,7 +102,8 @@
   color: #ffb300;
 }
 
-#second-place, #third-place {
+#second-place,
+#third-place {
   color: #fff;
 }
 

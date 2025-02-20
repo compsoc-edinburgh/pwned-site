@@ -30,10 +30,15 @@
 }
 
 .sponsors {
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 100px;
+
+  @media screen and (max-width: $cut) {
+    flex-direction: column-reverse;
+  }
 }
 
 .sponsors div {
@@ -116,6 +121,11 @@
   display: flex;
   gap: 5px;
   margin: 40px auto 0px;
+
+  @media screen and (max-width: $cut) {
+    flex-direction: column-reverse;
+  }
+
 }
 
 .call-for-papers-content {
@@ -125,8 +135,8 @@
   h1 {
     text-align: center;
     font-weight: 400;
-    // margin: 0px;
-    // padding: 0px;
+    margin: 20px;
+    padding: 0px;
   }
 
   p {
