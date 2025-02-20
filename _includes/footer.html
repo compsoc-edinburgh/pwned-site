@@ -1,20 +1,19 @@
 <footer class="footer">
-  <!-- <p>&copy; {{ site.username }}</p> -->
   <div style="text-align:center; align-items: center;">
     <a href="{{ site.baseurl }}" style="padding:10px">
-      <img src="/assets/icons/pwnedtransparent.png" style="width:51px;height:51px;">
+      <img src="{{ '/assets/icons/pwnedtransparent.png' | relative_url }}" style="width:51px;height:51px;">
     </a>
     <a href="https://sigint.mx" style="padding:10px">
-      <img src="/assets/icons/sigint.gif" style="width:51px;height:51px;">
+      <img src="{{ '/assets/icons/sigint.gif' | relative_url }}" style="width:51px;height:51px;">
     </a>
     <a href="https://comp-soc.com" style="padding:10px">
-      <img src="/assets/icons/compsoc-profile.png" style="width:51px;height:51px;">
+      <img src="{{ '/assets/icons/compsoc-profile.png' | relative_url }}" style="width:51px;height:51px;">
     </a>
   </div>
   <p> Hosted by SIGINT Edinburgh.</p>
   <div class="container">
-    <p><a href="/{{page.year | minus: 1}}/index.html"> {{ page.year | minus: 1 }} </a> | <a
-        href="{{ site.baseurl }}/coc/index.html"> Code of
+    <p><a href="{{ site.baseurl }}/{{page.year | minus: 1}}/index.html"> {{ page.year | minus: 1 }} </a> | <a
+        href="{{ '/coc/index.html' | relative_url }}"> Code of
         Conduct</a></p>
   </div>
 
@@ -32,6 +31,6 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
 <script src="{{ page.animation_src }}"></script>
-<script src="/assets/js/sweet-scroll.min.js"></script>
-<script src="/assets/js/main_{{ page.year }}.js"></script>
+<script src="{{ '/assets/js/sweet-scroll.min.js' | relative_url }}"></script>
+<script src="{{ site.baseurl }}/assets/js/main_{{ page.year }}.js"></script>
 {% include google-analytics.html %}

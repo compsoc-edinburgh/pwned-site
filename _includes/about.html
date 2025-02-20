@@ -57,7 +57,7 @@
     </div>
     <div class="tech">
       <h2>Where?</h2>
-        <a aria-label="Location" href="https://maps.app.goo.gl/fYTcfvRJZPKRK3yFA">
+        <a aria-label="Location" href="{{ page.conference_location }}">
       <p>
           <b>In-person on our <br>
           <span class="highlight">Edinburgh</span>
@@ -121,9 +121,9 @@
   {% for talk in data.talks %}
     {%  capture img %} 
       {% if talk.speaker.img != nil %}    
-        {{ talk.speaker.img }}
+        {{ talk.speaker.img |  absolute_url }}
       {% else %}
-        /assets/speakers/{{ talk.speaker.name | downcase | replace: ' ', '_' }}.png
+        {{ site.baseurl }}/assets/speakers/{{ talk.speaker.name | downcase | replace: ' ', '_' }}.png
       {% endif %}
     {% endcapture %}
 
@@ -196,7 +196,7 @@
           {% for sponsor in sponsor_tier[1] offset:offset limit:row_size %}
             {% comment %} TODO: Add class for sponsors so i don't have an aneurism {% endcomment %}
             <a href="{{ sponsor.url }}" target="_blank" style="margin: auto ; font-size: 0">
-              <img src="{{ sponsor.logo }}" class="sponsor" style="max-width: {{element_width}}px;"/>
+              <img src="{{ sponsor.logo | absolute_url }}" class="sponsor" style="max-width: {{element_width}}px;"/>
             </a>
           {% endfor %}
           </div>
@@ -215,7 +215,7 @@
     alt="{{ sponsor.name }} Logo" title="{{ sponsor.name }} Logo" />
   <h3 style="margin:0px; padding:0px; display:inline; font-size: 1.45rem;">
     Infra sponsored by
-    <a style="text-decoration:underline;" href="{{ sponsor.url }}" target="_blank">
+    <a style="text-decoration:underline;" href="{{ sponsor.url | absolute_url }}" target="_blank">
       {% assign split_url = sponsor.url | split: "/" %}
       {{ split_url[2] }}
     </a>

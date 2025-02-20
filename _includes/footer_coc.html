@@ -1,14 +1,13 @@
 <footer class="footer">
-    <!-- <p>&copy; {{ site.username }}</p> -->
     <div style="text-align:center; align-items: center;">
         <a href="{{ site.baseurl }}" style="padding:10px">
-            <img src="/assets/icons/pwnedtransparent.png" style="width:51px;height:51px;">
+            <img src="{{ site.baseurl }}/assets/icons/pwnedtransparent.png" style="width:51px;height:51px;">
         </a>
         <a href="https://sigint.mx" style="padding:10px">
-            <img src="/assets/icons/sigint.gif" style="width:51px;height:51px;">
+            <img src="{{ site.baseurl }}/assets/icons/sigint.gif" style="width:51px;height:51px;">
         </a>
         <a href="https://comp-soc.com" style="padding:10px">
-            <img src="/assets/icons/compsoc-profile.png" style="width:51px;height:51px;">
+            <img src="{{ site.baseurl }}/assets/icons/compsoc-profile.png" style="width:51px;height:51px;">
         </a>
     </div>
     <p> Hosted by SIGINT Edinburgh.</p>
@@ -17,6 +16,6 @@
 <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
-<script src="{{ '/assets/js/sweet-scroll.min.js' | prepend: site.baseurl }}"></script>
-<script src="{{ '/assets/js/main_2024.js' | prepend: site.baseurl }}"></script>
+<script src="{{ '/assets/js/sweet-scroll.min.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/main_2024.js' | relative_url }}"></script>
 {% include google-analytics.html %}

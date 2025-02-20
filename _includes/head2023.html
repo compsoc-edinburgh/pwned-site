@@ -7,13 +7,13 @@
   <meta name="description"
     content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  <link rel="stylesheet" href="{{ '/assets/css/style2023.css' | prepend: site.baseurl }}">
-  <link rel="shortcut icon" type="image/png" href="{{ '/assets/icons/favicon_2023.png' }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style2023.css' | relative_url }}">
+  <link rel="shortcut icon" type="image/png" href="{{ '/assets/icons/favicon_2023.png' | relative_url }}">
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://pwned.sigint.mx">
   <meta property="og:title" content="pwnEd 4">
   <meta property="og:description" content="< Edinburgh University's flagship CTF & conference />">
-  <meta property="og:image" content="{{ '/assets/event_banner.png' }}">
+  <meta property="og:image" content="{{ '/assets/event_banner.png' | relative_url }}">
   <meta name="twitter:card" content="summary_large_image">
 </head>
