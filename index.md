@@ -10,4 +10,6 @@ qual_end: 2025-03-09 23:59:59
 finals_start: 2025-04-12 09:00:00
 conf_start: 2025-04-13 09:00:00
 animation_src: "//cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.trunk.min.js"
+conference_location: "https://maps.app.goo.gl/fYTcfvRJZPKRK3yFA"
+
 ---

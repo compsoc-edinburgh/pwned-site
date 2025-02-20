@@ -18,7 +18,7 @@ sponsors:
       url: https://ctfbazaar.com/
 
 talks:
-  # Img can be automatically derived based off of the speaker name. If the speaker.name is not specified, will default to /assets/speakers/{{ talk.speaker.name | downcase | replace: ' ', '_' }}.png
+  # Img can be automatically derived based off of the speaker name. If the speaker.img is not specified, will default to /assets/speakers/{{ talk.speaker.name | downcase | replace: ' ', '_' }}.png
   # - title: "Electromagnetic eavesdropping: extracting screen content from radio waves"
   #   abstract:
   #     Voltage changes in electronic circuits cause them to emit electromagnetic waves.
