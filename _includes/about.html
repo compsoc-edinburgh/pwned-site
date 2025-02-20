@@ -13,17 +13,38 @@
   </p>
 </div>
 
-{% if page.event_over == True %}
-<div class="user-details" style="margin-top:60px; text-align: center;">
-  <p class="highlight">
-    pwnEd {{ page.edition }} is now over! Thank you all for participating!
-  </p>
-  <p style="padding: 10px; background: #ffb300; color: black; font-size: 1.5em;">
-    pwnEd {{ page.edition | plus: 1 }} is coming next year. <br> Keep updated on our
-    <a aria-label="Discord" target="_blank" style="color: black;" href="https://discord.gg/8XPjTrCXK9"><span
-        style="text-decoration: underline;">Discord</span> <i class="fa-brands fa-discord" aria-hidden="true"></i></a>!
-  </p>
+{% if page.cfp_open %} 
+<div class="call-for-papers">
+  <div class="call-for-papers-content">
+    <h1><a class="user-details">Call for Speakers</a></h1>
+    <p>
+      Our <b>call for speakers</b> is now open! Please fill out the form <a class="highlight"
+        href="https://forms.gle/bsduTy5nTP4NmNKp7">here</a> if you would like to present a ~50min talk. We are primarily
+      looking for technical presentations, but are open to all topics.
+    </p>
+  </div>
+  <div class="call-for-papers-content">
+    <h1><a class="user-details" id="">Call for Sponsors</a></h1>
+    <p>
+      We are looking for <b>sponsors</b> to support our event! Sponsoring pwnEd is a great opportunity to showcase your
+      company to some of the brightest student minds in infosec. If you are interested in sponsoring, please reach out to us
+       for more information at <a class="highlight" href="mailto:sponsorship@sigint.mx">sponsorship@sigint.mx</a>.
+    </p>
+  </div>
 </div>
+{% endif %}
+
+{% if page.event_over %}
+  <div class="user-details" style="margin-top:60px; text-align: center;">
+    <p class="highlight">
+      pwnEd {{ page.edition }} is now over! Thank you all for participating!
+    </p>
+    <p class="next-year">
+      pwnEd {{ page.edition | plus: 1 }} is coming next year. <br> Keep updated on our
+      <a aria-label="Discord" target="_blank" style="color: black;" href="https://discord.gg/8XPjTrCXK9"><span
+          style="text-decoration: underline;">Discord</span> <i class="fa-brands fa-discord" aria-hidden="true"></i></a>!
+    </p>
+  </div>
 {% endif %}
 
 <div class="user-details">

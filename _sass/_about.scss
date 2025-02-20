@@ -80,6 +80,10 @@
   h1,
   h2 {
     font-weight: 400;
+    margin-block-start: auto !important;
+    margin-block-start: auto !important;
+    padding-block-end: auto !important;
+    padding-block-end: auto !important;
     text-align: center;
   }
 }
@@ -99,6 +103,36 @@
 #second-place,
 #third-place {
   color: #fff;
+}
+
+.next-year {
+  padding: 10px;
+  background: #ffb300;
+  color: black;
+}
+
+
+.call-for-papers {
+  display: flex;
+  gap: 5px;
+  margin: 40px auto 0px;
+}
+
+.call-for-papers-content {
+  padding: 15px;
+  flex: 1;
+
+  h1 {
+    text-align: center;
+    font-weight: 400;
+    // margin: 0px;
+    // padding: 0px;
+  }
+
+  p {
+    text-align: justify;
+    padding: 0px;
+  }
 }
 
 .register-button {
