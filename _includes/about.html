@@ -3,17 +3,18 @@
 <div class="user-details">
   <h1><a id="about">About</a></h1>
   <p>
-    SIGINT is proud to present <b>pwnEd {{ page.edition }}</b>, the {{ page.edition }}th edition of our cybersecurity
-    competition for university students.
-    The competition will follow a <b>quals/finals format</b>, where qualifying teams will be invited to the in-person
-    finals hosted at our Edinburgh campus.
+    SIGINT is proud to present <b>pwnEd {{ page.edition }}</b>, the {{ page.edition }}th edition of our infosec <b>conference</b> and <b>CTF</b> for UK university students.
+    The CTF will follow a <b>quals/finals format</b>, where qualifying teams will be invited to the in-person finals hosted at our Edinburgh campus.
   </p>
   <p>
-    Whether you're an expert in hacking or just simply looking to solve a challenge, <b>you won't want to miss it</b>.
+    Combining a highly technical conference together with a CTF across two days, with two tracks of talks from industry leading professionals, researchers, academics and top CTF players, pwnEd is the perfect opportunity to learn, network and compete.
+  </p>
+  <p>
+    Whether you're a seasoned CTF player, new to the game, or just simply looking to solve a challenge, <b>you won't want to miss it</b>.
   </p>
 </div>
 
-{% if page.cfp_open %} 
+{% if page.cfp_open %}
 <div class="call-for-papers">
   <div class="call-for-papers-content">
     <h1><a class="user-details">Call for Speakers</a></h1>
@@ -27,8 +28,7 @@
     <h1><a class="user-details" id="">Call for Sponsors</a></h1>
     <p>
       We are looking for <b>sponsors</b> to support our event! Sponsoring pwnEd is a great opportunity to showcase your
-      company to some of the brightest student minds in infosec. If you are interested in sponsoring, please reach out to us
-       for more information at <a class="highlight" href="mailto:sponsorship@sigint.mx">sponsorship@sigint.mx</a>.
+      company to some of the brightest student minds in infosec. If you are interested in sponsoring, please reach out to us for more information at <a class="highlight" href="mailto:sponsorship@sigint.mx">sponsorship@sigint.mx</a>.
     </p>
   </div>
 </div>
@@ -50,12 +50,11 @@
 <div class="user-details">
   <h1>In-Person Finals and Conference</h1>
   <p>
-    The event will consist of a <b>Capture The Flag (CTF) followed by a conference</b> which will determine the overall
-    winners of pwnEd {{ page.edition }}.
+    The event will consist of our <b>Capture The Flag (CTF)</b> finals on day one, followed by our <b>conference</b>.
   </p>
   <p>
-    Bringing together <b>industry experts and top students</b> from across the country, the finals present a great
-    opportunity for networking with top notch professionals and diving deeper into cybersecurity.
+    Bringing together <b>industry experts and top students</b> from across the country, pwnEd {{ page.edition }} presents a great opportunity for networking with top notch professionals and diving deeper into highly technical
+    cybersecurity fields.
   </p>
   <div class="user">
     <div class="tech">
@@ -74,14 +73,14 @@
     <div class="tech">
       <h2>Where?</h2>
         <a aria-label="Location" href="{{ page.conference_location }}">
-      <p>
-          <b>In-person on our <br>
-          <span class="highlight">Edinburgh</span>
-          campus at the Nucleus building.
-          <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-        </b>
+        <p>
+            <b>In-person on our <br>
+            <span class="highlight">Edinburgh</span>
+            campus at the Nucleus building.
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            </b>
         </p>
-        </a>
+      </a>
     </div>
     <div class="tech">
       <h2>Who?</h2>
@@ -186,8 +185,8 @@
 
 {% for sponsor_tier in data.sponsors %}
   {% comment %} 
-  Skip infra sponsors as they're displayed separately at the bottom
-  sponsor_tier[0] contains the sponsor tier name
+    Skip infra sponsors as they're displayed separately at the bottom
+    sponsor_tier[0] contains the sponsor tier name
     sponsor_tier[1] contains the list of sponsors. If it's nil, that means there are no sponsors in that tier
   {% endcomment %}
   {% if sponsor_tier[1] == nil %}
