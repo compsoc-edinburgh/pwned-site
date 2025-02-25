@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function memLeak(num) {
         if (window.scrollY + window.innerHeight > document.body.offsetHeight - 100) {
-            if (byte_count >= hexStream.split(' ').length / 25) {
+            if (byte_count >= (hexStream.split(' ').length / 25) - 1) {
                 document.getElementById("segfault").style.visibility = "visible";
                 return;
             }
