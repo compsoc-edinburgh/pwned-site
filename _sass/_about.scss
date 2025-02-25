@@ -116,6 +116,22 @@
   color: black;
 }
 
+.tickets {
+  text-align: center;
+  margin-top: 40px;
+  padding: 10px;
+  background: #ffb300;
+  color: black;
+  font-size: 1.5em;
+
+  h1 {
+    padding-top: 0px;
+  }
+
+  p {
+    margin-bottom: 40px;
+  }
+}
 
 .call-for-papers {
   display: flex;

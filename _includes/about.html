@@ -14,6 +14,15 @@
   </p>
 </div>
 
+{% if page.ticket_link and (page.event_over != true) %} 
+  <div class="tickets" > 
+    <h1 class="glitch" data-text="Tickets are now live!"> Tickets are now live!</h1> 
+    <p> Get your conference ticket
+      <a target="_blank" href="{{ page.ticket_link }}">here</a>
+    </p>
+  </div>
+{% endif %}
+
 {% if page.cfp_open %}
 <div class="call-for-papers">
   <div class="call-for-papers-content">
