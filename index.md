@@ -5,8 +5,8 @@ username: pwnEd
 edition: 6
 year: "2025" # Must be a string as it's used to index the _data directory
 event_over: False
-qual_start: 2025-03-08 00:00:00
-qual_end: 2025-03-09 23:59:59
+qual_start: 2025-03-08 09:00:00
+qual_end: 2025-03-09 21:30:00
 qual_started: True # not(have the qualifiers started?)
 qual_reg: https://forms.gle/GULyguarHmXK81ucA
 cfp_open: True
