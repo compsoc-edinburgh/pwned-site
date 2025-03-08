@@ -1,12 +1,13 @@
 {% assign data = site.data.[page.year] %}
 
+{% if page.qual_live %}
 <div class="tickets" > 
   <h1 class="glitch" data-text="Qualifiers are happening now!!!">Qualifiers are happening now!!!</h1> 
   <p> Join in
-    <b><a target="_blank" href="https://quals.sigint.mx">here</a></b>
+    <b><a target="_blank" href="{{ page.qual_site }}">here</a></b>
   </p>
 </div>
-
+{% endif %}
 
 
 <div class="user-details">
@@ -75,6 +76,15 @@
     cybersecurity fields.
   </p>
   
+  {% if page.qual_registration_started %}
+  <div class="qualifiers" > 
+    <h1 class="glitch" data-text="Qualifier registration is live!"> Qualifier registration is live!</h1> 
+    <p> Register for the qualifiers
+      <a target="_blank" href="{{ page.qual_reg }}">here</a>
+    </p>
+  </div>
+  {% endif %}
+
   <div class="user">
     <div class="tech">
       <h2>When?</h2>
