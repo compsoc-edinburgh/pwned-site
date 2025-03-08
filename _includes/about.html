@@ -1,5 +1,15 @@
 {% assign data = site.data.[page.year] %}
 
+{% if page.qual_live %}
+<div class="tickets" > 
+  <h1 class="glitch" data-text="Qualifiers are happening now!!!">Qualifiers are happening now!!!</h1> 
+  <p> Join in
+    <b><a target="_blank" href="{{ page.qual_site }}">here</a></b>
+  </p>
+</div>
+{% endif %}
+
+
 <div class="user-details">
   <h1><a id="about">About</a></h1>
   <p>
@@ -65,8 +75,8 @@
     Bringing together <b>industry experts and top students</b> from across the country, pwnEd {{ page.edition }} presents a great opportunity for networking with top notch professionals and diving deeper into highly technical
     cybersecurity fields.
   </p>
-
-  {% if page.qual_started %}
+  
+  {% if page.qual_registration_started %}
   <div class="qualifiers" > 
     <h1 class="glitch" data-text="Qualifier registration is live!"> Qualifier registration is live!</h1> 
     <p> Register for the qualifiers
