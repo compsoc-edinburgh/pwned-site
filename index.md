@@ -8,7 +8,7 @@ event_over: False
 qual_start: 2025-03-08 09:00:00
 qual_end: 2025-03-09 21:30:00
 qual_registration_started: False # not(have the qualifiers started?)
-qual_live: True
+qual_live: False
 qual_reg: https://forms.gle/GULyguarHmXK81ucA
 qual_site: https://quals.sigint.mx
 cfp_open: True

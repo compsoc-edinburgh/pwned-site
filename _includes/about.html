@@ -124,6 +124,28 @@
 
 <div class="user-details">
   <h1><a id="quals">Online Qualifiers</a></h1>
+  {% comment %} DURING BUILD checks if the quals are now over {% endcomment %}
+  {% comment %} This cursed assignment is necessary as otherwise liquid doesn't recognise these as integers. Awful language designed by people who hate me :(  {% endcomment %}
+  {% assign end =  page.qual_end | date: "%s" | plus: 0 %} 
+  {% assign now = "now" | date: "%s" | plus: 0 %}
+  {% if end < now  %}
+  <p>
+    The qualifiers have now <a class="highlight">ended</a>.  Congratulations to our <a class="highlight">finalists</a>:
+
+    <ol style="text-align: left; margin: 0 auto; display: table;">
+    {% for team in data.finalists %}
+      {% assign team_split = team | split: " (" %}
+      <li style=""><b>{{ team_split[0] }}</b> ({{ team_split[1] }}</li>
+    {% endfor %}
+    </ol>
+    <br>
+    Stay tuned for the <b>finals</b>, and  
+        <a aria-label="Discord" target="_blank" href="https://discord.gg/8XPjTrCXK9"> join us <i
+            class="fa-brands fa-discord" aria-hidden="true"></i></a> for next year!
+  </p>
+    
+  {% else %}
+
   <p style="margin-bottom: 0px">
     The qualifiers will be an online <b>jeopardy-style CTF</b> with a large variety of challenges covering everything
     from Binary Exploitation to Cryptography.
@@ -155,6 +177,7 @@
       <p>All skill levels welcome, including beginners!</p>
     </div>
   </div>
+{% endif %}
 </div>
 
 
