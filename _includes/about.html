@@ -244,7 +244,7 @@
   {% if sponsor_tier[1] == nil %}
     {% continue %}
   {% endif %}
-  {% if sponsor_tier[0] == "infra" %}
+  {% if sponsor_tier[0] == "infra" or sponsor_tier[0] == "ctf" %}
     {% continue %}
   {% endif %}
   <div class="user" style="margin-bottom: 50px;">
@@ -277,7 +277,19 @@
 
 {% endfor %}
 
-
+{% for sponsor in data.sponsors.ctf %}
+<div style="width:30vw; margin: 70px auto 50px auto; display: flex; align-items: center; justify-content: center;">
+  <img src="{{ sponsor.logo | absolute_url }}" width="60%" style="float:left; margin-right:20px;"
+    alt="{{ sponsor.name }} Logo" title="{{ sponsor.name }} Logo" />
+  <h3 style="margin:0px; padding:0px; display:inline; font-size: 1.45rem;">
+    CTF prizes sponsored by
+    <a style="text-decoration:underline;" href="{{ sponsor.url | absolute_url }}" target="_blank">
+      {% assign split_url = sponsor.url | split: "/" %}
+      {{ split_url[2] }}
+    </a>
+  </h3>
+</div>
+{% endfor %}
 
 {% for sponsor in data.sponsors.infra %}
 <div style="width:30vw; margin: 70px auto 50px auto; display: flex; align-items: center; justify-content: center;">
