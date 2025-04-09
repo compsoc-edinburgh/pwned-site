@@ -1,8 +1,8 @@
 {% assign data = site.data.[page.year] %}
 
 {% if page.qual_live %}
-<div class="tickets" > 
-  <h1 class="glitch" data-text="Qualifiers are happening now!!!">Qualifiers are happening now!!!</h1> 
+<div class="tickets" >
+  <h1 class="glitch" data-text="Qualifiers are happening now!!!">Qualifiers are happening now!!!</h1>
   <p> Join in
     <b><a target="_blank" href="{{ page.qual_site }}">here</a></b>
   </p>
@@ -24,9 +24,9 @@
   </p>
 </div>
 
-{% if page.ticket_link and (page.event_over != true) %} 
-  <div class="tickets" > 
-    <h1 class="glitch" data-text="Tickets are now live!"> Tickets are now live!</h1> 
+{% if page.ticket_link and (page.event_over != true) %}
+  <div class="tickets" >
+    <h1 class="glitch" data-text="Tickets are now live!"> Tickets are now live!</h1>
     <p> Get your conference ticket
       <a target="_blank" href="{{ page.ticket_link }}">here</a>
     </p>
@@ -75,10 +75,10 @@
     Bringing together <b>industry experts and top students</b> from across the country, pwnEd {{ page.edition }} presents a great opportunity for networking with top notch professionals and diving deeper into highly technical
     cybersecurity fields.
   </p>
-  
+
   {% if page.qual_registration_started %}
-  <div class="qualifiers" > 
-    <h1 class="glitch" data-text="Qualifier registration is live!"> Qualifier registration is live!</h1> 
+  <div class="qualifiers" >
+    <h1 class="glitch" data-text="Qualifier registration is live!"> Qualifier registration is live!</h1>
     <p> Register for the qualifiers
       <a target="_blank" href="{{ page.qual_reg }}">here</a>
     </p>
@@ -126,7 +126,7 @@
   <h1><a id="quals">Online Qualifiers</a></h1>
   {% comment %} DURING BUILD checks if the quals are now over {% endcomment %}
   {% comment %} This cursed assignment is necessary as otherwise liquid doesn't recognise these as integers. Awful language designed by people who hate me :(  {% endcomment %}
-  {% assign end =  page.qual_end | date: "%s" | plus: 0 %} 
+  {% assign end =  page.qual_end | date: "%s" | plus: 0 %}
   {% assign now = "now" | date: "%s" | plus: 0 %}
   {% if end < now  %}
   <p>
@@ -139,11 +139,11 @@
     {% endfor %}
     </ol>
     <br>
-    Stay tuned for the <b>finals</b>, and  
+    Stay tuned for the <b>finals</b>, and
         <a aria-label="Discord" target="_blank" href="https://discord.gg/8XPjTrCXK9"> join us <i
             class="fa-brands fa-discord" aria-hidden="true"></i></a> for next year!
   </p>
-    
+
   {% else %}
 
   <p style="margin-bottom: 0px">
@@ -186,8 +186,8 @@
   <h1><a id="talks">Talks</a></h1>
 
   {% for talk in data.talks %}
-    {%  capture img %} 
-      {% if talk.speaker.img != nil %}    
+    {%  capture img %}
+      {% if talk.speaker.img != nil %}
         {{ talk.speaker.img |  absolute_url }}
       {% else %}
         {{ site.baseurl }}/assets/speakers/{{ talk.speaker.name | downcase | replace: ' ', '_' }}.png
@@ -236,7 +236,7 @@
 
 
 {% for sponsor_tier in data.sponsors %}
-  {% comment %} 
+  {% comment %}
     Skip infra sponsors as they're displayed separately at the bottom
     sponsor_tier[0] contains the sponsor tier name
     sponsor_tier[1] contains the list of sponsors. If it's nil, that means there are no sponsors in that tier
@@ -244,15 +244,17 @@
   {% if sponsor_tier[1] == nil %}
     {% continue %}
   {% endif %}
-  {% if sponsor_tier[0] == "infra" %} 
+  {% if sponsor_tier[0] == "infra" %}
     {% continue %}
   {% endif %}
   <div class="user" style="margin-bottom: 50px;">
     <div class="tech">
+      {% if sponsor_tier[0] != "nolabel" %}
       <h2> {{ sponsor_tier[0] | capitalize }} </h2>
+      {% endif %}
       {% comment %} This is to dynamically resize the sponsors {% endcomment %}
       {% assign row_size = 3 %}
-      {% assign rows = sponsor_tier[1].size | divided_by: row_size | ceil %} 
+      {% assign rows = sponsor_tier[1].size | divided_by: row_size | ceil %}
       {% assign current_row_size =  sponsor_tier[1].size |  at_most: row_size %}
       {% assign element_width = 600 |  divided_by: current_row_size |  at_most: 300  %}
 
@@ -272,7 +274,7 @@
     </div>
   </div>
 
-{% endfor %} 
+{% endfor %}
 
 
 
