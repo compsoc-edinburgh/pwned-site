@@ -19,10 +19,13 @@ sponsors:
     # - name: Trenchant
     #   url: https://trenchant.io
     #   logo: /assets/sponsors/trenchant.png
-
   gold:
   silver:
   bronze:
+  nolabel:
+    - name: OffSec
+      logo: /assets/sponsors/offsec.png
+      url: https://www.offsec.com/
   infra:
     - name: CTFbazaar
       logo: /assets/sponsors/ctfbazaar.svg
