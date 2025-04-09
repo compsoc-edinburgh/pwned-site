@@ -250,8 +250,9 @@
   <div class="user" style="margin-bottom: 50px;">
     <div class="tech">
       {% if sponsor_tier[0] != "nolabel" %}
-      <h2> {{ sponsor_tier[0] | capitalize }} </h2>
+      <h2> {{ sponsor_tier[0] }} </h2>
       {% endif %}
+
       {% comment %} This is to dynamically resize the sponsors {% endcomment %}
       {% assign row_size = 3 %}
       {% assign rows = sponsor_tier[1].size | divided_by: row_size | ceil %}

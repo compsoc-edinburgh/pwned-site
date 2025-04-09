@@ -15,13 +15,13 @@ finalists:
   - "K1N95 (King's College London)"
   - "OUCSS (The Open University)"
 sponsors:
-  platinum:
+  Platinum:
     # - name: Trenchant
     #   url: https://trenchant.io
     #   logo: /assets/sponsors/trenchant.png
-  gold:
-  silver:
-  bronze:
+  Gold:
+  Silver:
+  Bronze:
   CTF:
     - name: OffSec
       logo: /assets/sponsors/offsec.png
