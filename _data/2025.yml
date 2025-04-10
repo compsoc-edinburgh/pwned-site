@@ -22,10 +22,10 @@ sponsors:
   Gold:
   Silver:
   Bronze:
-  CTF:
+  ctf:
     - name: OffSec
       logo: /assets/sponsors/offsec.png
-      url: https://www.offsec.com/
+      url: https://offsec.com/
   nolabel:
   infra:
     - name: CTFbazaar
