@@ -1,10 +1,10 @@
 # Site settings
-title: pwnEd 6
+title: pwnEd 7
 description: Edinburgh University CTF & Conference
 
 # User settings
 username: pwnEd
-edition: 6
+edition: 7
 email: contact@sigint.mx
 twitter_username: siginthq
 discord: "https://discord.gg/v6UfC2KSpr"
