@@ -1,0 +1,47 @@
+prizes:
+  # first: 1000
+  # second: 500
+  # third: 300
+
+finalists:
+  #  - "Cheese (University of Warwick)"
+  #- "cheriPi (University of Cambridge)"
+  #- "AFNOM (University of Birmingham)"
+  #- "MEOW MEOW MEOW MEOW MEOW (University of Southampton)"
+  #- "CaptureTheFowl (University of York)"
+  #- "DMUHackers (De Montfort University)"
+  #- "0xhack (Abertay University)"
+  #- "I Don't Know (University of Edinburgh)"
+  #- "K1N95 (King's College London)"
+  #- "OUCSS (The Open University)"
+sponsors:
+  Platinum:
+  Gold:
+     - name: OtterSec
+       url: https://osec.io
+       logo: /assets/sponsors/OtterSec-White.webp
+  Silver:
+  Bronze:
+  ctf:
+    #- name: OffSec
+    #  logo: /assets/sponsors/offsec.png
+    #  url: https://offsec.com/
+  nolabel:
+    infra:
+    - name: CTFbazaar
+      logo: /assets/sponsors/ctfbazaar.svg
+      url: https://ctfbazaar.com/
+
+talks:
+  # Img can be automatically derived based off of the speaker name. If the speaker.img is not specified, will default to /assets/speakers/{{ talk.speaker.name | downcase | replace: ' ', '_' }}.png
+  # - title: "Electromagnetic eavesdropping: extracting screen content from radio waves"
+  #   abstract:
+  #     Voltage changes in electronic circuits cause them to emit electromagnetic waves.
+  #     The weak signals emitted by monitors and associated cabling can be captured and processed to recover readable
+  #     images from a distance.
+  #     In this talk, I will give an overview of emissions security, the history of these attacks, and explain how and why
+  #     electromagnetic eavesdropping on computer monitors works (hopefully in a way that doesn't require prior signal
+  #     processing knowledge).
+  #   speaker:
+  #     name: "Dimitrije"
+  #     bio: PhD student in the hardware security group at at the University of Cambridge, working on electromagnetic eavesdropping attacks targetting video interfaces. Long-time CTF player, originally with cr0wn (now organizers) and with cheriPi.
