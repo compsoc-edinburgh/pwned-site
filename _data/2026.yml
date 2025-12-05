@@ -21,6 +21,9 @@ sponsors:
        url: https://osec.io
        logo: /assets/sponsors/OtterSec-White.webp
   Silver:
+     - name: Interrupt Labs
+       url: https://www.interruptlabs.co.uk/
+       logo: /assets/sponsors/IL_Logo.webp
   Bronze:
   ctf:
     #- name: OffSec
