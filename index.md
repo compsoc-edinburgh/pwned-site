@@ -12,8 +12,8 @@ qual_live: False
 qual_reg: 
 qual_site: https://quals.sigint.mx
 cfp_open: False
-finals_start: 2026-05-15 09:00:00
-conf_start: 2026-05-14 09:00:00
+finals_start: 2026-03-15 09:00:00
+conf_start: 2026-03-14 09:00:00
 ticket_link: 
 animation_src: "//cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.trunk.min.js"
 conference_location: "https://maps.app.goo.gl/fYTcfvRJZPKRK3yFA"
