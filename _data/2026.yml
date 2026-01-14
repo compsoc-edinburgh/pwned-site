@@ -25,6 +25,9 @@ sponsors:
        url: https://www.interruptlabs.co.uk/
        logo: /assets/sponsors/IL_Logo.webp
   Bronze:
+     - name: BCS
+       url: https://www.bcs.org/
+       logo: /assets/sponsors/bcs.png
   ctf:
     #- name: OffSec
     #  logo: /assets/sponsors/offsec.png
