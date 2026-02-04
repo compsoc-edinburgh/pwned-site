@@ -11,11 +11,17 @@ qual_registration_started: True # not(have the qualifiers started?)
 qual_live: False
 qual_reg: https://quals.sigint.mx
 qual_site: https://quals.sigint.mx
+<<<<<<< Updated upstream
 cfp_open: False
 finals_start: 2026-03-14 09:00:00
 conf_start: 2026-03-15 09:00:00
+=======
+cfp_open: True
+finals_start: 2026-03-15 09:00:00
+conf_start: 2026-03-14 09:00:00
+>>>>>>> Stashed changes
 ticket_link: 
 animation_src: "//cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"
 conference_location: "https://maps.app.goo.gl/fYTcfvRJZPKRK3yFA"
-cfp_link: https://forms.gle/bsduTy5nTP4NmNKp7
+cfp_link: https://forms.gle/ixDnEFJcwfjQLjj1A
 ---
