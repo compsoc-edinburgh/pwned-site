@@ -106,6 +106,39 @@
       text-align: center;
     }
   }
+
+  .icon-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 25%;
+    border: none;
+    transition: all .5s;
+
+    img {
+      transition: filter .5s;
+    }
+
+    &:hover,
+    &:active {
+      background: #FFF;
+
+      img {
+        opacity: 1;
+        filter: invert(1);
+      }
+    }
+
+    @media only screen and (min-width:$cut) {
+      width: 45px;
+      height: 45px;
+    }
+  }
 }
 
 .down {
