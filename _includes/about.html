@@ -266,7 +266,7 @@
           {% for sponsor in sponsor_tier[1] offset:offset limit:row_size %}
             {% comment %} TODO: Add class for sponsors so i don't have an aneurism {% endcomment %}
             <a href="{{ sponsor.url }}" target="_blank" style="margin: auto ; font-size: 0">
-              <img src="{{ sponsor.logo | absolute_url }}" class="sponsor" style="max-width: {{element_width}}px;"/>
+              <img src="{{ sponsor.logo | absolute_url }}" class="sponsor sponsor-{{ sponsor_tier[0] | downcase }}"/>
             </a>
           {% endfor %}
           </div>
@@ -279,7 +279,7 @@
 
 {% for sponsor in data.sponsors.ctf %}
 <div style="width:30vw; margin: 70px auto 50px auto; display: flex; align-items: center; justify-content: center;">
-  <img src="{{ sponsor.logo | absolute_url }}" width="60%" style="float:left; margin-right:20px;"
+  <img src="{{ sponsor.logo | absolute_url }}" class="sponsor-special" style="margin-right:20px;"
     alt="{{ sponsor.name }} Logo" title="{{ sponsor.name }} Logo" />
   <h3 style="margin:0px; padding:0px; display:inline; font-size: 1.45rem;">
     CTF prizes sponsored by
@@ -293,7 +293,7 @@
 
 {% for sponsor in data.sponsors.infra %}
 <div style="width:30vw; margin: 70px auto 50px auto; display: flex; align-items: center; justify-content: center;">
-  <img src="{{ sponsor.logo | absolute_url }}" width="60%" style="float:left; margin-right:20px;"
+  <img src="{{ sponsor.logo | absolute_url }}" class="sponsor-special" style="margin-right:20px;"
     alt="{{ sponsor.name }} Logo" title="{{ sponsor.name }} Logo" />
   <h3 style="margin:0px; padding:0px; display:inline; font-size: 1.45rem;">
     Infra sponsored by
