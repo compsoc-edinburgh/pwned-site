@@ -204,8 +204,33 @@
 
 .sponsor {
   width: 100%;
-  zoom: 1.5;
   flex: 0 1 auto;
+}
+
+.sponsor-platinum {
+  max-width: 450px;
+}
+
+.sponsor-gold {
+  max-width: 400px;
+}
+
+.sponsor-silver {
+  max-width: 350px;
+}
+
+.sponsor-bronze {
+  max-width: 200px;
+}
+
+.sponsor-nolabel {
+  max-width: 200px;
+}
+
+.sponsor-special {
+  max-width: 200px;
+  height: auto;
+  flex-shrink: 0;
 }
 
 .sponsor_placeholder {
