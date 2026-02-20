@@ -4,16 +4,15 @@ prizes:
   # third: 300
 
 finalists:
-  #  - "Cheese (University of Warwick)"
-  #- "cheriPi (University of Cambridge)"
-  #- "AFNOM (University of Birmingham)"
-  #- "MEOW MEOW MEOW MEOW MEOW (University of Southampton)"
-  #- "CaptureTheFowl (University of York)"
-  #- "DMUHackers (De Montfort University)"
-  #- "0xhack (Abertay University)"
-  #- "I Don't Know (University of Edinburgh)"
-  #- "K1N95 (King's College London)"
-  #- "OUCSS (The Open University)"
+  - cheese (University of Warwick)
+  - MEOW MEOW MEOW MEOW MEOW (University of Cambridge)
+  - R0073R5 (Coventry University)
+  - The Pwntipines (University of Edinburgh)
+  - Tarot Triad Tron (University of Bristol)
+  - DMUHackers (De Montfort University)
+  - hackchester (The University of Manchester)
+  - UCL (University College London)
+
 sponsors:
   Platinum:
   Gold:

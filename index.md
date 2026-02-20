@@ -7,7 +7,7 @@ year: "2026" # Must be a string as it's used to index the _data directory
 event_over: False
 qual_start: 2026-02-14 09:00:00
 qual_end: 2026-02-15 21:30:00
-qual_registration_started: True # not(have the qualifiers started?)
+qual_registration_started: False # not(have the qualifiers started?)
 qual_live: False
 qual_reg: https://quals.sigint.mx
 qual_site: https://quals.sigint.mx
