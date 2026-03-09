@@ -194,7 +194,7 @@
     {% endcapture %}
 
     <div class="speaker-container">
-      <img class="speaker-image" src="{{ img }}" alt="Speaker's Image">
+      <!-- <img class="speaker-image" src="{{ img }}" alt="Speaker's Image"> -->
       <div class="talk-info">
         <div class="talk-title">{{ talk.title }}</div>
         <div class="speaker-name" onclick="popUp(this)">
@@ -203,13 +203,12 @@
           {{ talk.speaker.bio }}
           </span>
         </div>
+        <span class="talk-description talk-abstract">
+          {{ talk.abstract }}
+        </span>
       </div>
     </div>
-    <div class="talk-description">
-      <span class="talk-abstract">
-        {{ talk.abstract }}
-      </span>
-    </div>
+
     <br>
   {% endfor %}
 {% endif %}
