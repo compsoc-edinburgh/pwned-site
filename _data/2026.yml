@@ -38,6 +38,41 @@ sponsors:
       url: https://ctfbazaar.com/
 
 talks:
+    - title: "Doom on a Printer!? - Exploiting the Lexmark CX532adwe"
+      abstract: ""
+      speaker:
+        name: "Joseph B"
+        bio: ""
+    - title: "We've done paperclips, now what?"
+      abstract: ""
+      speaker:
+        name: "Viktor"
+        bio: ""
+    - title: "From Exploit to Alert: A Detection Engineer's Guide to Threat Intel"
+      abstract: ""
+      speaker:
+        name: "Steve Cooper"
+        bio: ""
+    - title: "Application Security in the age of cloud automation"
+      abstract: ""
+      speaker:
+        name: "Simardeep Singh"
+        bio: ""
+    - title: "Hacking in the age of vibecoding (Workshop)"
+      abstract: ""
+      speaker:
+        name: "OtterSec"
+        bio: ""
+    - title: "Hacking the hackers, Vulnerabilities in Open Source C2 Frameworks"
+      abstract: ""
+      speaker:
+        name: "Laurence"
+        bio: ""
+    - title: "Hacking Satellites: Cybersecurity in the Space Domain"
+      abstract: ""
+      speaker:
+        name: "Ciara Brown"
+        bio: ""
   # Img can be automatically derived based off of the speaker name. If the speaker.img is not specified, will default to /assets/speakers/{{ talk.speaker.name | downcase | replace: ' ', '_' }}.png
   # - title: "Electromagnetic eavesdropping: extracting screen content from radio waves"
   #   abstract:
