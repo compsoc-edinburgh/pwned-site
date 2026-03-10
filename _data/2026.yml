@@ -47,7 +47,7 @@ talks:
       abstract: ""
       speaker:
         name: "Viktor"
-        bio: "CTFbazaar"
+        bio: "Former SIGINT"
     - title: "Hacking the hackers, Vulnerabilities in Open Source C2 Frameworks"
       abstract: ""
       speaker:
