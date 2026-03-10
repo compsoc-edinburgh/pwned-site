@@ -38,29 +38,28 @@ sponsors:
       url: https://ctfbazaar.com/
 
 talks:
+    #- title: "Sigils in Silicon, Networks of Wizards, and the Descent into Esoteric Madness"
+    #  speaker:
+    #    name: "Alistair"
+    #    bio: "Bugcrowd"
+    #  abstract: ""
     - title: "Doom on a Printer!? - Exploiting the Lexmark CX532adwe"
-      abstract: ""
+      abstract: "Joesph will be talking about the vulnerability research and exploit development process at Interrupt Labs, and their pwn2own submission for the Lexmark CX532adwe."
       speaker:
         name: "Joseph B"
         bio: "Interrupt Labs"
     - title: "We've done paperclips, now what?"
-      abstract: ""
+      abstract: "Join Viktor as he talks about his journey from touching a game console for the first time, to learning how to microsolder and unlock new features in proprietary firmware"
       speaker:
         name: "Viktor"
         bio: "Former SIGINT"
     - title: "Hacking the hackers, Vulnerabilities in Open Source C2 Frameworks"
-      abstract: ""
+      abstract: "As open-source command-and-control (C2) frameworks like Sliver, Havoc, and Mythic surge in popularity, their surprisingly large attack surfaces are creating unique opportunities for \"hack back\" exploits against offensive operators themselves. We will explore the architecture of these tools and demonstrate a series of vulnerabilities ranging from auth bypasses to a SSRF-to-RCE chain that allows a compromising an agent and pivoting straight into the team server. We will conclude by analysing the architectural root causes behind these flaws and exploring what the evolving landscape of offensive tooling means for both practitioners and defenders."
       speaker:
         name: "Laurence Tennant"
         bio: "Co-founder of Cryptohack"
-    - title: "Sigils in Silicon, Networks of Wizards, and the Descent into Esoteric Madness"
-      speaker:
-        name: "Alistair"
-        bio: "Bugcrowd"
-      abstract: ""
     - title: "Hacking in the age of vibecoding (Workshop)"
-      abstract: "Vibecoding is now producing multi-million-line codebases. To demonstrate how to hack such software, I vibecoded a blockchain node! Blockchain nodes are among the densest demonstrations of interdisciplinary engineering, combining Cryptography, Consensus, VMs, Databases, Game Theory, Networking, and more. Try to keep a vibecoded blockchain node up while the lecturer exploits it every few minutes. Longest-running node gets a prize!
-        <br /><br /> A single bug can liquidate billions of dollars in an instant. No cringe, silly smart contracts, only low-level knowledge! "
+      abstract: "Vibecoding is now producing multi-million-line codebases. To demonstrate how to hack such software, I vibecoded a blockchain node! Blockchain nodes are among the densest demonstrations of interdisciplinary engineering, combining Cryptography, Consensus, VMs, Databases, Game Theory, Networking, and more. Try to keep a vibecoded blockchain node up while exploits are getting thrown at it every few minutes. Longest-running node gets a prize!"
       speaker:
         name: "Michael Debono"
         bio: "OtterSec"
@@ -70,7 +69,7 @@ talks:
         name: "Steve Cooper"
         bio: "DetectionFlow"
     - title: "Application Security in the age of cloud automation"
-      abstract: "Web application vulnerabilities are often viewed as isolated issues with limited impact. In modern cloud environments, this assumption no longer holds true. As organizations increasingly rely on automation-driven web applications to manage infrastructure, deploy services, and perform routine operational tasks, application flaws can directly translate into cloud-wide compromise. This talk examines how common web application weaknesses can escalate beyond the application layer and break critical cloud security boundaries. Through four focused attack scenarios  identity and token exposure, internal service abuse via SSRF, CI/CD deployment trust exploitation, and cloud-native persistence mechanisms the session illustrates how trust assumptions introduced during application design and implementation are abused in real-world environments. Rather than showcasing isolated exploits, the presentation focuses on systemic design and implementation failures that emerge as applications take on greater responsibility for automation and control within cloud platforms. It highlights why traditional threat models often underestimate the resulting blast radius and how these risks are amplified by automated workflows. The session concludes with practical, application-first defensive strategies, helping teams design and deploy web applications that limit cloud impact when failures occur, ensuring that a single web bug does not become a cloud breach."
+      abstract: "In today's highly automated cloud environments web vulnerabilities can quickly escalate beyond the application layer and into a devastating cloud-wide compromise. Join me as we scrutinize broken security boundaries through the lens of identity exposure, SSRF, CI/CD exploitation, and cloud-native persistence. We'll wrap-up with defensive strategies to help teams build resilient applications to prevent a web bug becoming a catastrophic cloud breach."
       speaker:
         name: "Simardeep Singh"
         bio: "Warwick University"
