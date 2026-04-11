@@ -4,7 +4,7 @@ title: pwnEd 7
 username: pwnEd
 edition: 7
 year: "2026" # Must be a string as it's used to index the _data directory
-event_over: False
+event_over: True
 qual_start: 2026-02-14 09:00:00
 qual_end: 2026-02-15 21:30:00
 qual_registration_started: False # not(have the qualifiers started?)
